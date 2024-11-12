@@ -9,6 +9,9 @@
 
 **SystemClock**: Cung cấp thời gian hiện tại cho hệ thống, phục vụ cho việc ghi lại các mốc thời gian khi tạo báo cáo.
 
+### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/V95D3e8m48NtSugv077FmfYeSMla1BMyHMEXE0madCs5H_8A0X7bHrrs-hr-h-tZTj-KQaIhp9En6eJtMU530v0DkKhmV48HH1D8xIm8kJfjE6bAHRRrmLueDMhEfiGxkdiDY8O9H-lfEN6xl5OebJ4Wqk_J1Ejo8rNC1oZRIgIjmQqNAtKPQ8Hmz4sbbUGZVk6OD-ypub3Zqw-x9it1FxffyASovgE4sgLOlCG6UThzonC00F__0m00)
+
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
 **Employee**: có các thuộc tính như idEmployee, name, reportPreferences.
 
@@ -28,7 +31,7 @@
 
 **ReportService - SystemClock(Dependency)**:ReportService sử dụng SystemClock để lấy thời gian hiện tại khi tạo báo cáo.
 
-Biểu đồ lớp : 
+### Biểu đồ lớp : 
 ![Diagram](https://www.planttext.com/api/plantuml/png/V5CxRjj04Ett5DE5B7G15O43EQK38N9df1YjHkGct2KpknGW6AvTk77A84rIfWXo01Ofv8lm1Bc2br-JD6qM137pvirxCyF_nRypwv1ThXCXti33VLdScHXC53_yHf2dNnAIilYHmU7q4roSbyLt2UxqnyH2o0IjXVSwIz8Z4LmByCz2xRh84ZQEbOcQk44zYJ1bARirqvwOZ2JRfsywyeyrP4DyKBBlW0TK2MuJQhANn-ofzEhJ1BEAaIFwaEijyHG54HbYT2rHGBtmpaAuR2LC9NLQk9SmzbOFzTnJBw5wDq4oksb8fiQHSS-ThpdzJD9TeC68j8Vu6joYxQSWNp6so9hgSt9-33EstNe428Pa7JfyBcfpj8xqAadbbrv6pjoeeqkbXzwgDgjnDWZR_4rrR1TbyKt1rnmDn6Ln2v4gYx_3enDYlF_5uktJkNacoln4_UKS8SWj3Kvndp8SC54xT2erW6O7_XE1oHiYdmbdcDl5Bk6TjQbKJMaWcRnWMtFeUXdT2SnnlBoriTnMYEUgTUqvrI_NpZKQRc9c4iDqDGpdX-zFKcUX46SUMltkZm000F__0m00)
 
 
@@ -38,6 +41,9 @@ Biểu đồ lớp :
 **Employee**: Lớp đại diện cho nhân viên trong hệ thống, lưu trữ các thông tin như tên đăng nhập, mật khẩu và quyền truy cập của người dùng.
 
 **System**: Hệ thống thực hiện việc kiểm tra và xác thực tên đăng nhập và mật khẩu để quyết định quyền truy cập vào hệ thống.
+
+### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/R57DJiCm3BxdAVm2q-uzeA6D6mV417StDMj4cY3RsTHduy0ZyGeaMmhjngMgdU_FzlVdrqOKMTFW3LgD32z2RDgOGeSymcCykF241p8s1kNeuJvflxty-uoae4x7StTFV7IMJ8UABGgTfNQrCAPKiBhxaspW8MZkMQQkoA0Ny_jOa4kh1lQf7Pmky4l8HAf96dX5xt8Skk5KH27CKpQmxSc-GvAhN7CGhAvjdaaJ1pXUt5mCm2J9wzBgduagKPAr9B9-G-SJqyrKowtjd7nu7C6NrkGqMroTAU-hZwT96_9fYJb_XroLWsueTENiFm000F__0m00)
 
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
 **Employee**: có các thuộc tính như  username, password, role, idEmpoyee.
@@ -50,7 +56,9 @@ Biểu đồ lớp :
 **LoginService - Employee(Dependency)**: LoginService phụ thuộc vào Employee để xác thực tên đăng nhập và mật khẩu. LoginService truy vấn thông tin từ Employee để kiểm tra tính hợp lệ của thông tin đăng nhập.
 
 **LoginService - System(Association)**: LoginService tương tác với System để cấp quyền truy cập cho người dùng nếu tên đăng nhập và mật khẩu hợp lệ.
-Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/b95D2i8m48NtESKi5Sm5WaWLtRdh2K8wr40oASbKAUB9N7Wahs1Rh1BTwFRDlFVDp_rwAnBhoArtmZYT4knyuqA726S18C5Maw2Wv6Yf7kKsOIJjSx7f_QSGgqoCmRsxBk99sOVQKednQCr4-ZKIGBTyG69hDEFiqxRuyimLR48_XQOtl-mIen_906uOvk-Wrw6MKkRxADXYWrGXcKva5IbN4rh1EgLWh6ORI1Hz-_231m000F__0m00)
+
+### Biểu đồ lớp : 
+![Diagram](https://www.planttext.com/api/plantuml/png/b95D2i8m48NtESKi5Sm5WaWLtRdh2K8wr40oASbKAUB9N7Wahs1Rh1BTwFRDlFVDp_rwAnBhoArtmZYT4knyuqA726S18C5Maw2Wv6Yf7kKsOIJjSx7f_QSGgqoCmRsxBk99sOVQKednQCr4-ZKIGBTyG69hDEFiqxRuyimLR48_XQOtl-mIen_906uOvk-Wrw6MKkRxADXYWrGXcKva5IbN4rh1EgLWh6ORI1Hz-_231m000F__0m00)
 
 ### 8.CA SỬ DỤNG Maintain Purchase Order
 **PurchaseOrder**: Lớp đại diện cho đơn đặt hàng, bao gồm thông tin về khách hàng, sản phẩm, ngày tháng
@@ -58,6 +66,10 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/b95D2
 **PurchaseOrderService**: Dịch vụ quản lý các đơn đặt hàng trong hệ thống, hỗ trợ các hành động tạo mới, cập nhật và xóa đơn đặt hàng.
 
 **System**: Hệ thống sẽ giúp giao diện người dùng cho nhân viên và kiểm tra quyền truy cập và tính hợp lệ của đơn đặt hàng.
+
+### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/d5H1JiCm4Bpx5Vk1VY07L8cA6w8YAdSdtX9BZbtMwrPz6mUUn1UmYw4qZbBIwwvdTcPdvS_tZwLdIHnw8sJBZc3ZaKJZWbMIZh0Er7RIunCffBLyHT4wo-JCPUV-ksWY52rh7W1hfBrkKIZ9ied5o-ugLuL8is5nLqwju4NZ0NQv3Yurl2ZU5U2pi0gUyIsWvscMCw3WoYuI4PF6FGwO8DaJOv22wiTo1G_8RJSaCjgp60N0OafL87kTwbVJrAvgjEgwlR_B6ezjfVtEo6Enywce7vtIso5aPjPrQ7hDq2SgtKhMpjuGz6ONFGzZdfjmBUEbX1EJ6jdXFvADKhUQ-fEB6xBCyAnXRe9rvmuP2eG-61RBU1pfm_W2003__mC0)
+
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
 
 **PurchaseOrder**: Có các thuộc tính như idOrder, customer, products, date, totalAmount.
@@ -73,7 +85,8 @@ PurchaseOrderService sử dụng PurchaseOrder để thực hiện các thao tá
 
 System tương tác với PurchaseOrderService để quản lý và thực hiện các thao tác trên đơn hàng.
 
-Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/b55DIaCn4Dxd5BFKnRj0aD9ADu9WuPrWJ8OQI3AFp4GeuibSU2IlO4nRyPKdw2Omty_CDvEFj_UrA1QjAHeNKGHsjRWd57eedWgy6801Wk-LXL5BoFkEkIhAwGAS2llgL2pS1z6R8xFgb4Sb2zlszb9PCMuIrwmDvVeOoRoQfGmZbUVWg4S1S8LQYqvSyJ7KJ7rjuPOv4kOkhvF_ZznJf9dypf_t-w7ypZaUH2cTaYNCkF_RgDRWP1s6rSN5BMn4s0NKmDaiNcB9jAM9igVi3h-sFjld4zRDzlNxdm000F__0m00)
+### Biểu đồ lớp :
+![Diagram](https://www.planttext.com/api/plantuml/png/b55DIaCn4Dxd5BFKnRj0aD9ADu9WuPrWJ8OQI3AFp4GeuibSU2IlO4nRyPKdw2Omty_CDvEFj_UrA1QjAHeNKGHsjRWd57eedWgy6801Wk-LXL5BoFkEkIhAwGAS2llgL2pS1z6R8xFgb4Sb2zlszb9PCMuIrwmDvVeOoRoQfGmZbUVWg4S1S8LQYqvSyJ7KJ7rjuPOv4kOkhvF_ZznJf9dypf_t-w7ypZaUH2cTaYNCkF_RgDRWP1s6rSN5BMn4s0NKmDaiNcB9jAM9igVi3h-sFjld4zRDzlNxdm000F__0m00)
 
 #### 9.CA SỬ DỤNG Create Administrative Report
 **ReportService**: Chịu trách nhiệm xử lý các yêu cầu tạo báo cáo hành chính (Administrative Report). Nó nhận các tiêu chí từ Payroll Administrator, truy xuất thông tin cần thiết và tạo báo cáo dựa trên các tiêu chí đó.
@@ -85,6 +98,10 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/b55DI
 **ProjectManagementDatabase**: Chứa thông tin cần thiết để tạo báo cáo, như tổng giờ làm việc và lương theo năm.
 
 **SystemClock**: Cung cấp thời gian hiện tại khi tạo báo cáo, giúp đảm bảo thông tin thời gian chính xác trong báo cáo.
+
+### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/X97D3S8m38NlcS8Bi40Fg4WWBXnGEq5eh2fIVehZHkfi71Y95I1fLQJIYgEVdz_dEA_7immiYNjhX6pO4noKrKuqtZ5vCrOLTfwuHegwGQ4aoviC22VR6JyW7YVXswc7m6WllXKY1y1klv9KG8Nt7WE3J3qTc2JhY43P9NudKiwIMi0P6N1I8UqWbXxORIx0FRd5z3ftVjC83Bc4pyrqr3o0yMqGi-SVCBlNELaju4e-QeKRfodHgVHbRm000F__0m00)
+
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
 
 **PayrollAdministrator**: có thuộc tính requestedReport
@@ -105,7 +122,8 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/b55DI
 **ReportService - ProjectManagementDatabase(Dependency)**	ReportService truy xuất dữ liệu từ ProjectManagementDatabase để lấy thông tin cho báo cáo.
 
 **ReportService - SystemClock(Dependency)**	ReportService sử dụng SystemClock để lấy thời gian hiện tại khi tạo báo cáo.
-Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X99DJiCm48NtEOKla0j4g6hLBW5Lf1UOEACmu9zqFAaK8Kx6WYFr2hMRfY8XY8rbFS_tF6_iyzVtEWYmTDPasa08QWyzUsCsjIL7GHZ4i_h8bCeLux7385Y_OEjP2bKAaskop-p63dg9V2ADToXfMoP19hWpwGXEG0OgWmCN2lKORtmOAbPpsudVeMznudLDiGE9Qbgl6hfwfcZl1Dr2vtlsRwZb2HmqQ6D9HA22CARGhy0DFdUsGfxtcSxRWT-Xn4ZXjt_PnxdPhV7wVNJic8Txy43srcJQ9MWwo3nVZJCer2O4hmc4l5ieMtozw8rj70OwtIynVsR_1_mPQbAwZflqeou0003__mC0)
+### Biểu đồ lớp : 
+![Diagram](https://www.planttext.com/api/plantuml/png/X99DJiCm48NtEOKla0j4g6hLBW5Lf1UOEACmu9zqFAaK8Kx6WYFr2hMRfY8XY8rbFS_tF6_iyzVtEWYmTDPasa08QWyzUsCsjIL7GHZ4i_h8bCeLux7385Y_OEjP2bKAaskop-p63dg9V2ADToXfMoP19hWpwGXEG0OgWmCN2lKORtmOAbPpsudVeMznudLDiGE9Qbgl6hfwfcZl1Dr2vtlsRwZb2HmqQ6D9HA22CARGhy0DFdUsGfxtcSxRWT-Xn4ZXjt_PnxdPhV7wVNJic8Txy43srcJQ9MWwo3nVZJCer2O4hmc4l5ieMtozw8rj70OwtIynVsR_1_mPQbAwZflqeou0003__mC0)
 
 ### 10.CA SỬ DỤNG Maintain Employee Information
 **EmployeeService**: Chịu trách nhiệm xử lý các yêu cầu liên quan đến việc thêm mới, cập nhật và xóa thông tin nhân viên, lưu trữ thông tin chi tiết của nhân viên trong hệ thống.
@@ -117,6 +135,10 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X99DJ
 **ProjectManagementDatabase**: Chứa thông tin về mã số công việc và dự án, chỉ sử dụng để truy xuất thông tin phục vụ việc thanh toán và báo cáo nhưng không cập nhật dữ liệu.
 
 **SystemClock**: Cung cấp thời gian hiện tại để ghi nhận các thời điểm thêm mới, cập nhật hoặc xóa nhân viên trong hệ thống.
+
+### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/d9D1JiCm44NtSmfVe1V80bMYHMM74i7UiQVKacEdut6hd8q5H-8AE90qQPj0rQN7y_p_p9U_FZwNWILnh2n8nPx49eVIHwSbDM9TrTOtYCzkwr_aEuBoZidRqyNZxzaY0JesF205qi4e12rPbZBWwMBL5G0skLWyN6bauitWKM1N5YRLuR9f30uUCf7ZFcBWWMxbuRfpp7TEC_64h7OpQDSqvlf1MbKcWmSyDqsLPECTNFQBnPHuUYEI-qzzPkm2dPxPs7ZcoMslJAYjRAQzpsQqreRlpAY8PPNWMASHKS-xdLZIwmzpJqI5JF7qajE-_yudETiQghetRaxc71CXAeKXt9vEiVF77YOCqJ8iKzZjT_q6003__mC0)
+
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
 
 **Employee**: Có các thuộc tính như idEmployee, name, employeeType (hourly, salaried, commissioned), address, socialSecurityNumber, paymentMethod, commissionRate, và hourlyRate.
@@ -136,7 +158,9 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X99DJ
 **PayrollSystem - ProjectManagementDatabase(Dependency)**: PayrollSystem truy xuất dữ liệu từ ProjectManagementDatabase để xác nhận mã số công việc khi thanh toán, nhưng không thực hiện thay đổi trong cơ sở dữ liệu này.
 
 **EmployeeService - SystemClock(Dependency)**: EmployeeService sử dụng SystemClock để ghi nhận thời gian hiện tại khi thực hiện các thao tác thêm mới, cập nhật hoặc xóa nhân viên, giúp hệ thống lưu lại lịch sử các thay đổi.
-Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/Z5DBJiCm4Dtd55x2eXU8K5IWB90eGaqlCBM7nk1Fv0-IXJWP2ux45N2SEgshL69ZMJDlPjvx7lz-_ooj0-Ey51KLO2rvaBtG0P5yLeGi26SvK9FM6QxsAQn0bW4yeBQXBnF0c45hYvZLb8DeaNh3NNZsSeUc0FGG92gtHjTfLcIebf9RoxNQW8kJLjhl1APKfxqHeGX_LMUgMZGVd6PncRHzujRLP3XlCh9928Qlu8LxkS273F9onHLEJkNGTKtkj1O8Ae5zpoAx_-CP2fp1FquKJl2JrCZLQ27QO1tAWz3ePqixP5xWdCyRfDemUt1Wp3Sd7Or-G-hMe62F0tu53dPWiusq0xF7yHdFcwGfO_qA7N1nt8If_qZrNcZwdZjwOyOvkEN3fkNRK7J-bej5SzpQcjpQj5ukhiWijFGdjiOU5KD5GrMc4lYYzA9mRiwfgWAyZ9VXl_q1003__mC0)
+
+### Biểu đồ lớp :
+![Diagram](https://www.planttext.com/api/plantuml/png/Z5DBJiCm4Dtd55x2eXU8K5IWB90eGaqlCBM7nk1Fv0-IXJWP2ux45N2SEgshL69ZMJDlPjvx7lz-_ooj0-Ey51KLO2rvaBtG0P5yLeGi26SvK9FM6QxsAQn0bW4yeBQXBnF0c45hYvZLb8DeaNh3NNZsSeUc0FGG92gtHjTfLcIebf9RoxNQW8kJLjhl1APKfxqHeGX_LMUgMZGVd6PncRHzujRLP3XlCh9928Qlu8LxkS273F9onHLEJkNGTKtkj1O8Ae5zpoAx_-CP2fp1FquKJl2JrCZLQ27QO1tAWz3ePqixP5xWdCyRfDemUt1Wp3Sd7Or-G-hMe62F0tu53dPWiusq0xF7yHdFcwGfO_qA7N1nt8If_qZrNcZwdZjwOyOvkEN3fkNRK7J-bej5SzpQcjpQj5ukhiWijFGdjiOU5KD5GrMc4lYYzA9mRiwfgWAyZ9VXl_q1003__mC0)
 
 
 ### 11. CA SỬ DỤNG RUN PAYROLL
@@ -150,6 +174,10 @@ Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/Z5DBJ
   
   **PurchaseOrder**: Đại diện cho các đơn hàng bán hàng của nhân viên nhận lương hoa hồng. BankSystem: Hệ thống thanh toán được dùng để xử lý các giao dịch chuyển tiền trực tiếp vào tài khoản ngân hàng của nhân viên. 
   **SystemClock**: Cung cấp thời gian hiện tại để xác định các mốc thời gian khi chạy bảng lương.
+
+  ### Biểu đồ tuần tự
+![Diagram](https://www.planttext.com/api/plantuml/png/T59RRi8m4FptAVO2N20V2AaFlf0GFS5YJqiaOwFrEbBEreyUgLSe4J5f7FZSsHdDxEFt-sUJb4NpsHks6eNst4lqViU1lo36ng3Nki0VaAwrC0ZQQazlvukFFL1Wnyf7JYZqrx6U6aLnxvYv8QtMbLT3XnpeSiFCl3UmgmmDRQ644IG7vTOdKx7-2qkKXjwXzZHf1JQAcxI5IAj7jWTebl1SVNT-CE5UOjSwB6Clnwqssz0BUvizA-eTpU8k76yr3OUXn1tSSw_nD9D8hWT9sLgaz9czsI2uuO7-0000__y30000)
+
 ### THUỘC TÍNH VÀ QUAN HỆ GIỮA CÁC LỚP
  **Employee**: Có các thuộc tính như idEmployee, name, paymentMethod, salary, commissionRate,hoursWorked
 
@@ -178,7 +206,9 @@ MỐI QUAN HỆ GIỮA CÁC LỚP
 **Employee - PurchaseOrder (Association)**: Một nhân viên có thể có nhiều PurchaseOrder để ghi nhận các đơn hàng bán hàng của mình.
 
 **Employee - BankSystem (Dependency)**: Mỗi nhân viên có thể liên kết với hệ thống ngân hàng để xử lý việc chuyển khoản lương.
-Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X5DBJiCm5Dpt55x2eXV80lN7WWK2qKgiN-qd6jMVw3qRoKASZ0L7uWhORPB6RGaRongFvyrCuf-lxnbx81-CdaWDpEBUDDf5HF4n4M8gQjK1rTfJRTyEg0M3bHW03KI3rZ-YtpbLd31ee5Y9bGjRZGT8EcDgvjhP5_1O7ErS87vrj4VLuv-JrjepH79Qhv7UQzaPb84eJLuTbTBQ-SdKPPHwQ5I8Xfn4vbRg1hjmVUxRIYoSqmZsD7XJ6vH0gXtPNNeeawhImdYKG787Z4-aaCPbKu5ubYv3S-E2zPVA2x3xTMIFffNT9c13O1caJvMVgKCfSr3tu0Fth5xvgBhKJkulkyyL7HtcNRvqzhMcqxlJlvMOsA1LQ6MyHkmBhyISsSaQilLhpBB8V-c3TlxpC8nRSFiK8quBpfZ7WlYNkrdQv1Vw2m00__y30000)
+
+### Biểu đồ lớp : 
+![Diagram](https://www.planttext.com/api/plantuml/png/X5DBJiCm5Dpt55x2eXV80lN7WWK2qKgiN-qd6jMVw3qRoKASZ0L7uWhORPB6RGaRongFvyrCuf-lxnbx81-CdaWDpEBUDDf5HF4n4M8gQjK1rTfJRTyEg0M3bHW03KI3rZ-YtpbLd31ee5Y9bGjRZGT8EcDgvjhP5_1O7ErS87vrj4VLuv-JrjepH79Qhv7UQzaPb84eJLuTbTBQ-SdKPPHwQ5I8Xfn4vbRg1hjmVUxRIYoSqmZsD7XJ6vH0gXtPNNeeawhImdYKG787Z4-aaCPbKu5ubYv3S-E2zPVA2x3xTMIFffNT9c13O1caJvMVgKCfSr3tu0Fth5xvgBhKJkulkyyL7HtcNRvqzhMcqxlJlvMOsA1LQ6MyHkmBhyISsSaQilLhpBB8V-c3TlxpC8nRSFiK8quBpfZ7WlYNkrdQv1Vw2m00__y30000)
 
 ### code Java mô phỏng ca sử dụng Maintain Timecard.
 lớp Employee.java
