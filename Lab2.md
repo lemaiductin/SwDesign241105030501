@@ -181,6 +181,26 @@ MỐI QUAN HỆ GIỮA CÁC LỚP
 Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X5DBJiCm5Dpt55x2eXV80lN7WWK2qKgiN-qd6jMVw3qRoKASZ0L7uWhORPB6RGaRongFvyrCuf-lxnbx81-CdaWDpEBUDDf5HF4n4M8gQjK1rTfJRTyEg0M3bHW03KI3rZ-YtpbLd31ee5Y9bGjRZGT8EcDgvjhP5_1O7ErS87vrj4VLuv-JrjepH79Qhv7UQzaPb84eJLuTbTBQ-SdKPPHwQ5I8Xfn4vbRg1hjmVUxRIYoSqmZsD7XJ6vH0gXtPNNeeawhImdYKG787Z4-aaCPbKu5ubYv3S-E2zPVA2x3xTMIFffNT9c13O1caJvMVgKCfSr3tu0Fth5xvgBhKJkulkyyL7HtcNRvqzhMcqxlJlvMOsA1LQ6MyHkmBhyISsSaQilLhpBB8V-c3TlxpC8nRSFiK8quBpfZ7WlYNkrdQv1Vw2m00__y30000)
 
 ### code Java mô phỏng ca sử dụng Maintain Timecard.
+```java
+public class Employee {
+    private String employeeId;
+    private String name;
+    private static int idCounter = 1;
+
+    public Employee(String name) {
+    	this.employeeId = "EMP" + idCounter++;
+        this.name = name;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
 
 
 
