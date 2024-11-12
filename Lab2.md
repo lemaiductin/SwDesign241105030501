@@ -201,7 +201,10 @@ public class Employee {
         return name;
     }
 }
+```
+
  lớp TimeCard.java
+ ```
 import java.time.LocalDate;
 
 public class Timecard {
@@ -236,8 +239,9 @@ public class Timecard {
         return "Timecard [Employee ID: " + employeeId + ", Date: " + date + ", Hours Worked: " + hoursWorked + "]";
     }
 }
-
+```
  Lớp TimeCardService
+ ```
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -273,7 +277,10 @@ public class TimecardService {
         System.out.println("Timecard not found for employee ID " + employee.getEmployeeId() + " on date " + date);
     }
 }
+```
+
 Lớp SystemClock
+```
 import java.time.LocalDate;
 
 public class SystemClock {
@@ -281,8 +288,10 @@ public class SystemClock {
         return LocalDate.now();
     }
 }
+```
 
  lớp Main
+ ```
 import java.time.LocalDate;
 
 public class Main {
@@ -314,6 +323,7 @@ public class Main {
         }
     }
 }
+```
 
 
 
