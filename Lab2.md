@@ -181,6 +181,7 @@ MỐI QUAN HỆ GIỮA CÁC LỚP
 Biểu đồ lớp : ![Diagram](https://www.planttext.com/api/plantuml/png/X5DBJiCm5Dpt55x2eXV80lN7WWK2qKgiN-qd6jMVw3qRoKASZ0L7uWhORPB6RGaRongFvyrCuf-lxnbx81-CdaWDpEBUDDf5HF4n4M8gQjK1rTfJRTyEg0M3bHW03KI3rZ-YtpbLd31ee5Y9bGjRZGT8EcDgvjhP5_1O7ErS87vrj4VLuv-JrjepH79Qhv7UQzaPb84eJLuTbTBQ-SdKPPHwQ5I8Xfn4vbRg1hjmVUxRIYoSqmZsD7XJ6vH0gXtPNNeeawhImdYKG787Z4-aaCPbKu5ubYv3S-E2zPVA2x3xTMIFffNT9c13O1caJvMVgKCfSr3tu0Fth5xvgBhKJkulkyyL7HtcNRvqzhMcqxlJlvMOsA1LQ6MyHkmBhyISsSaQilLhpBB8V-c3TlxpC8nRSFiK8quBpfZ7WlYNkrdQv1Vw2m00__y30000)
 
 ### code Java mô phỏng ca sử dụng Maintain Timecard.
+### lớp Employee.java
 ```java
 public class Employee {
     private String employeeId;
@@ -200,6 +201,125 @@ public class Employee {
         return name;
     }
 }
+### lớp TimeCard.java
+```java
+import java.time.LocalDate;
+
+public class Timecard {
+    private String employeeId;
+    private LocalDate date;
+    private double hoursWorked;
+
+    public Timecard(String employeeId, LocalDate date, double hoursWorked) {
+        this.employeeId = employeeId;
+        this.date = date;
+        this.hoursWorked = hoursWorked;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
+    @Override
+    public String toString() {
+        return "Timecard [Employee ID: " + employeeId + ", Date: " + date + ", Hours Worked: " + hoursWorked + "]";
+    }
+}
+
+### Lớp TimeCardService
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TimecardService {
+    private List<Timecard> timecards = new ArrayList<>();
+
+    public void recordTime(Employee employee, double hoursWorked) {
+        LocalDate currentDate = SystemClock.getCurrentDate();
+        Timecard timecard = new Timecard(employee.getEmployeeId(), currentDate, hoursWorked);
+        timecards.add(timecard);
+        System.out.println("Recorded time: " + timecard);
+    }
+
+    public List<Timecard> getTimecardsForEmployee(String employeeId) {
+        List<Timecard> employeeTimecards = new ArrayList<>();
+        for (Timecard timecard : timecards) {
+            if (timecard.getEmployeeId().equals(employeeId)) {
+                employeeTimecards.add(timecard);
+            }
+        }
+        return employeeTimecards;
+    }
+
+    public void updateTimecard(Employee employee, LocalDate date, double newHoursWorked) {
+        for (Timecard timecard : timecards) {
+            if (timecard.getEmployeeId().equals(employee.getEmployeeId()) && timecard.getDate().equals(date)) {
+                timecard.setHoursWorked(newHoursWorked);
+                System.out.println("Updated timecard: " + timecard);
+                return;
+            }
+        }
+        System.out.println("Timecard not found for employee ID " + employee.getEmployeeId() + " on date " + date);
+    }
+}
+### Lớp SystemClock
+```java
+import java.time.LocalDate;
+
+public class SystemClock {
+    public static LocalDate getCurrentDate() {
+        return LocalDate.now();
+    }
+}
+
+### lớp Main
+```java
+import java.time.LocalDate;
+
+public class Main {
+    public static void main(String[] args) {
+        // Khởi tạo dịch vụ TimecardService
+        TimecardService timecardService = new TimecardService();
+
+        // Tạo một nhân viên
+        Employee employee = new Employee("John Doe");
+
+        // Ghi nhận giờ làm việc cho nhân viên
+        timecardService.recordTime(employee, 8.0);
+        timecardService.recordTime(employee, 7.5);
+
+        // Lấy và hiển thị tất cả Timecard của nhân viên
+        System.out.println("Timecards for " + employee.getName() + ":");
+        for (Timecard timecard : timecardService.getTimecardsForEmployee(employee.getEmployeeId())) {
+            System.out.println(timecard);
+        }
+
+        // Cập nhật giờ làm việc cho một ngày cụ thể
+        LocalDate dateToUpdate = SystemClock.getCurrentDate();
+        timecardService.updateTimecard(employee, dateToUpdate, 8.5);
+
+        // Hiển thị lại tất cả Timecard của nhân viên sau khi cập nhật
+        System.out.println("Updated Timecards for " + employee.getName() + ":");
+        for (Timecard timecard : timecardService.getTimecardsForEmployee(employee.getEmployeeId())) {
+            System.out.println(timecard);
+        }
+    }
+}
+
+
+
 
 
 
