@@ -17,9 +17,9 @@ IPrintService: xác định phương thức in.
 
 PrintService: Một lớp xử lý in tương tác với máy in để in báo cáo hoặc phiếu lương. Lớp này sẽ triển khai giao diện IPrintService.
 
-Entities:
-Report: Đối tượng báo cáo hoặc phiếu lương cần in.
-PrintInformation: Đối tượng chứa thông tin in, chẳng hạn như số bản sao, định dạng giấy, cài đặt máy in.
+Entities
+ * Report: Đối tượng báo cáo hoặc phiếu lương cần in.
+ * PrintInformation: Đối tượng chứa thông tin in, chẳng hạn như số bản sao, định dạng giấy, cài đặt máy in.
 
  ### ProjectManagementDatabase Subsystem Context Diagram
  ![Diagram](https://www.planttext.com/api/plantuml/png/h5DBJiCm4Dtx5BC35cN1CaAeQeD45rI8dc2IJXE3FyKUjqJ0oLXm9Av0axQHqr1LGcGHEVORlyzClZ-_XfxHST1AY3D8QI4D0PS4OslOMQN8GQxGUz6yuS7P9yevEdqJq3oEs4bQqGwH8kCvZajq1Ks3piWb47zTY8y3nebXSWlCISZz2YRHRHbw-ZDR0X6oHpqBcQyyawvHhzNMCKYzLAJ9i3H50sjrTSEuHuD50_n_cRq0hjylBuyJ7_YwtMZddHtQjp0cR8MkK0LAOBQHQugQkEEmlhw5BhTxataBx-nFKTF1INxKy0wmjkvv0x-pmVa4KXioHRqcZMmmStHLPnxJqLKlz9T0hcgYRbPxCR_Dm2CfP6cDB-NIY_vm3mOt_HbC8DHf7kz-NHKBIo2tMWSZSsJoi9PSdgZkz2Xfn-WKQTokk4eCoSphV_m7003__mC0)
@@ -30,9 +30,9 @@ IProjectDatabase: định nghĩa các phương thức truy vấn thông tin từ
 
 ProjectManagementDatabase: Một lớp proxy để kết nối với cơ sở dữ liệu DB2 chứa thông tin dự án. Lớp này triển khai giao diện IProjectDatabase.
 
-Entities:
-ChargeNumber: Đối tượng mã chi phí liên kết với các dự án.
-ProjectData: Đối tượng chứa dữ liệu dự án được truy xuất từ cơ sở dữ liệu.
+Entities
+* ChargeNumber: Đối tượng mã chi phí liên kết với các dự án.
+* ProjectData: Đối tượng chứa dữ liệu dự án được truy xuất từ cơ sở dữ liệu.
 
 ## 2. Analysis class to design element map
 
