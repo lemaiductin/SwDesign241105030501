@@ -41,7 +41,7 @@ Entities
 
 ## 2. Analysis class to design element map
 
-Ánh xạ các lớp phân tích đến các phần tử thiết kế
+Ánh xạ các lớp phân tích đến các phần tử thiết kế BankSystem
 | **Analysis** | **Design Element** |
 |---------------------|--------------------|
 |PayrollController            |PayrollController  |
@@ -50,7 +50,7 @@ Entities
 |Paycheck        |Paycheck	   |
 |BankInformation     |BankInformation |
 
-Ánh xạ các lớp phân tích đến các phần tử thiết kế
+Ánh xạ các lớp phân tích đến các phần tử thiết kế PrintService
 | **Analysis** | **Design Element** |
 |---------------------|--------------------|
 |PrintController            |PrintController |
@@ -59,7 +59,7 @@ Entities
 |Report        |Report	   |
 |PrintInformation     |PrintInformation |
 
-Ánh xạ các lớp phân tích đến các phần tử thiết kế
+Ánh xạ các lớp phân tích đến các phần tử thiết kế ProjectManagementDatabase
 | **Analysis** | **Design Element** |
 |---------------------|--------------------|
 |ProjectController            |ProjectController|
@@ -69,7 +69,7 @@ Entities
 |ProjectData     |ProjectData|
 
 ## 3. Design element to owning package map
-Ánh xạ các phần tử thiết kế vào các gói
+Ánh xạ các phần tử thiết kế vào các gói BankSystem
 | **Design Element** | "Owning" Package |
 |---------------------|--------------------|
 |PayrollController            |Applications::Payroll  |
@@ -78,6 +78,7 @@ Entities
 |Paycheck        |Business Services::Payroll Artifacts  |
 |BankInformation     |Business Services::Bank Details |
 
+Ánh xạ các phần tử thiết kế vào các gói PrintService
 | **Design Element** | "Owning" Package |
 |---------------------|--------------------|
 |PrintController            |Applications::PrintManagement |
@@ -86,6 +87,7 @@ Entities
 |Report        |Business Services::DocumentArtifacts|
 |PrintInformation     |Business Services::PrintSettings|
 
+Ánh xạ các phần tử thiết kế vào các gói ProjectManagementDatabase
 | **Design Element** | "Owning" Package |
 |---------------------|--------------------|
 |ProjectController        |Applications::ProjectManagement|
@@ -96,4 +98,5 @@ Entities
 
 ## 4. Design element to owning package map
 ### Biểu đồ mô tả các layer
+![Diagram](https://www.planttext.com/api/plantuml/png/Z5H1RjKm4Dtd5AFkUu4kKFjR2LNYeufo0TSniVc9apfEgmgnG5smG4YmPW6XwewA8h5gXBfmzU-H4_GAZ9qFttPIgHj76i-RUVFUEFVTxNQjYT9DaIU9ObGJcUKCDdQgAXUKQ57AUWFU9007v4oLURvRIcs_JC4Mt7qIVVUkWGN7xxc4uyQqe9Nv8JbeJknPcbPQj19IFneh1aZv6Waz6dJSz3SN4dBp1zA--mMsyTjWgBb8qvoT4iM6aRoh6P6BGwPE16MhUG7sNV2irgp0ray5AI75jkybS3nnmBxxB3EGcVcE8VDDPWuMe9xrtPSA6Gvq5vm8oBn2NWl48jk0r8YGKt4LZIZXo1yeXvE-knpaMsc-pfwWCWB53FQ89ZiKAVWSd2tsveZKCGswRA7kkw-sz4_8RR1Psp6mSlWvaIHZ1PD-fPS-kSbIKoPRsg7HiwOM4ab3g22kCEMCBh3J)
 
