@@ -42,12 +42,11 @@ Entities
 ## 2. Analysis class to design element map
 
 Ánh xạ các lớp phân tích đến các phần tử thiết kế
-| **Các lớp phân tích** | **Phần tử thiết kế** |
+| **Analysis** | **Design Element** |
 |---------------------|--------------------|
-|Employee            |EmployeeManagementService  |
-|Timecard         |TimecardProcessingModule   |
-|Paycheck          |PayrollProcessingService |
-|PurchaseOrder        |CommissionProcessingModule	   |
-|BankSystem     |BankTransactionService |
-|ProjectManagement      |ProjectManagementService |
-|Document    |PrintService |
+|PayrollController            |PayrollController  |
+|IBankSystem         |IBankSystem   |
+|BankSystem          |BankSystem |
+|Paycheck        |Paycheck	   |
+|BankInformation     |BankInformation |
+
