@@ -1,13 +1,18 @@
 ### Biểu đồ ngữ cảnh
  ### BankSystem Subsystem Context Diagram
- ![Diagram](https://www.planttext.com/api/plantuml/png/h99DJiCm48NtFiNiA1Bj0QAegg0iigagUWB7dLAh_edi2I82JiQ28t45R3T9JIfsP36oPZpFtvlCz-VNoXDtr6h5s0siyI0D0XqH7gmXPnK8nRrdASAMTo6b-f921syCqkTQqnTdj-nZ8bKPGdVW0faSJb3TStFQTPvGZo9xRAoNDED1IXnHd0eOJdSGMctiAI36oXoiqvoaDTVlxThQdvMtphvsPmiWTQDGeo5fdjEr4QPtbn6LfHyrcgYnNFuFPVKtH3wHydsno7Wc_Xv3E_MsCFitYI6mOwfdo5pRrb01QzlM2WSVd32aGenebn5aq1S18QB2fjKrkW9sv09_Nwj3puPh7DF9w1Eg9E6Fil7iUd7cy-Ml7IXWBnqA6iRh8Rdny28vo-x5li7gD3-XPso5PXyt-mS00F__0m00)
+ ![Diagram](https://www.planttext.com/api/plantuml/png/d9DBJiCm48RtFiNiMYJQ0qHHLF6Iigie5t2TARNgs94zGKJ0oLXm9Aw0xQR1TNVDmahcyS_ydvpVxv-L8swfRnLZCtZ0dTG8j4UuDvgiKGej2CMTO_64DHz2DCcMfJX-L1LyC8YFxVLOEBzXNvbohGdjZWjaylG6zHtNXytW2Dj9fC7EE4bpxgN47iMXWDFRBVXM4teA26UjTyQsdAJHb_Cs_TOTbTVMl0z7Eo3RJc6BcgH-ZMNJCgFJPAEoT9D65pGIgrjVzcAvTbo4yNK31Mp8UjMnWBUcr-IZJyfm6eCUElKkBxtUSRBiOb5DNNaywsGfzl9pkKnCPn0VFIWQsM5o6U8O3mXZFdBn_Fy99jCkgcRmZ2gct5vsZbtUhR1pkcC1ZRGew4JAGPplu4toCpDd4F94Je6jK3VX3_W3003__mC0)
  
-  PayrollController: yêu cầu BankSystem thực hiện giao dịch chuyển khoản.  
+  PayrollController: xử lý việc thanh toán lương cho nhân viên bằng cách sử dụng hệ thống ngân hàng để gửi tiền.
   
-  IBankSystem: dùng để xử lý các giao dịch chuyển tiền trực tiếp vào tài khoản ngân hàng
+  IBankSystem: dùng để xử lý các giao dịch chuyển tiền trực tiếp vào tài khoản ngân hàng.
   
-  BankSystemProxy: giao tiếp với BankBoundary để gửi yêu cầu chuyển tiền đến hệ thống ngân hàng thực tế.
+  BankSystem: Đây là lớp triển khai của IBankSystem, được xem là lớp proxy tương tác với hệ thống cơ sở dữ liệu ngân hàng để gửi tiền trực tiếp vào tài khoản.
   
+  Entities
+   * Paycheck: Đối tượng phiếu lương để gửi vào ngân hàng.
+   * BankInformation: Đối tượng chứa thông tin ngân hàng.
+    
+
  ### PrintService Subsystem Context Diagram
 ![Diagram](https://www.planttext.com/api/plantuml/png/h5FBJeGm5DttAxfpJ9pvWCQOYOy52uqP_84A5sZI1salAZw-p8MVv2zOe621P5R3WfRxEkVSU_dz_jaxv1OR9GavexTG20qKAw0tHgCrKeAbcUJEaVvD7wtG6Fa-2EsVkhCVe3OMDtmu6HtEYy6PwCAm8R-xMiLH67rElXR0YKQm1S-0YF56apuj1ViY_DVfCTFcsRKEGVbOyzOEYgbGjGG56eKk-x29KDoCaxAQ2xtytErc80lQTvuQ1hOmJcY0ckZu20cCfkZBbC6M-VbvMPFL0qU28ax_edW9gNXV5vB6tfjyRQy5EDOrBEuAs0Uk88QToRasZSwvRTSB1tRoZOmSwFp91EycvyZ7kc6y1v2z1bU9sf7btcwtLukjOhJfcZYpTL5B0iohKwhH8kC8ZhuAhDP9OGX7QyPz3e5axrLr_-8V0000__y30000)
 
