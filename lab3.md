@@ -1,4 +1,4 @@
-### Biểu đồ ngữ cảnh
+### Xác định các phần tử thiết kế cho hệ thống "Payroll System".
  ### BankSystem Subsystem Context Diagram
  ![Diagram](https://www.planttext.com/api/plantuml/png/d9DBJiCm48RtFiNiMYJQ0qHHLF6Iigie5t2TARNgs94zGKJ0oLXm9Aw0xQR1TNVDmahcyS_ydvpVxv-L8swfRnLZCtZ0dTG8j4UuDvgiKGej2CMTO_64DHz2DCcMfJX-L1LyC8YFxVLOEBzXNvbohGdjZWjaylG6zHtNXytW2Dj9fC7EE4bpxgN47iMXWDFRBVXM4teA26UjTyQsdAJHb_Cs_TOTbTVMl0z7Eo3RJc6BcgH-ZMNJCgFJPAEoT9D65pGIgrjVzcAvTbo4yNK31Mp8UjMnWBUcr-IZJyfm6eCUElKkBxtUSRBiOb5DNNaywsGfzl9pkKnCPn0VFIWQsM5o6U8O3mXZFdBn_Fy99jCkgcRmZ2gct5vsZbtUhR1pkcC1ZRGew4JAGPplu4toCpDd4F94Je6jK3VX3_W3003__mC0)
  
