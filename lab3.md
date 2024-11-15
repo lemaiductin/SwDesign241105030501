@@ -50,3 +50,50 @@ Entities
 |Paycheck        |Paycheck	   |
 |BankInformation     |BankInformation |
 
+Ánh xạ các lớp phân tích đến các phần tử thiết kế
+| **Analysis** | **Design Element** |
+|---------------------|--------------------|
+|PrintController            |PrintController |
+|IPrintService         |IPrintService   |
+|PrintService          |PrintService |
+|Report        |Report	   |
+|PrintInformation     |PrintInformation |
+
+Ánh xạ các lớp phân tích đến các phần tử thiết kế
+| **Analysis** | **Design Element** |
+|---------------------|--------------------|
+|ProjectController            |ProjectController|
+|IProjectDatabase         |IProjectDatabase |
+|ProjectManagementDatabase	          |ProjectManagementDatabase	|
+|ChargeNumber        |ChargeNumber	|
+|ProjectData     |ProjectData|
+
+## 3. Design element to owning package map
+Ánh xạ các phần tử thiết kế vào các gói
+| **Design Element** | "Owning" Package |
+|---------------------|--------------------|
+|PayrollController            |Applications::Payroll  |
+|IBankSystem         |Middleware::BankServices   |
+|BankSystem          |Middleware::BankServices |
+|Paycheck        |Business Services::Payroll Artifacts  |
+|BankInformation     |Business Services::Bank Details |
+
+| **Design Element** | "Owning" Package |
+|---------------------|--------------------|
+|PrintController            |Applications::PrintManagement |
+|IPrintService         |Middleware::Services::Interfaces |
+|PrintService          |Middleware::Services|
+|Report        |Business Services::DocumentArtifacts|
+|PrintInformation     |Business Services::PrintSettings|
+
+| **Design Element** | "Owning" Package |
+|---------------------|--------------------|
+|ProjectController        |Applications::ProjectManagement|
+|IProjectDatabase         |Middleware::DataAccess::Interfaces |
+|ProjectManagementDatabase	          |Middleware::DataAccess|
+|ChargeNumber        |Business Services::ProjectArtifacts|
+|ProjectData     |Business Services::ProjectInfo|
+
+## 4. Design element to owning package map
+### Biểu đồ mô tả các layer
+
