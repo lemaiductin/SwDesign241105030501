@@ -1,22 +1,41 @@
 # Thiết Kế Ca Sử Dụng cho Hệ Thống "Payroll System"
 # Ca sử dụng Login
+## 1. Describe Interaction Among Design Objects
 ### Mô tả:
-- Ca sử dụng này mô tả quá trình người dùng đăng nhập vào hệ thống để truy cập vào các chức năng của hệ thống lương.
+- Người dùng tương tác với hệ thống bằng cách nhập username và password.
+- LoginController nhận yêu cầu từ người dùng.
+- AuthenticationService kiểm tra tính hợp lệ của thông tin đăng nhập.
+- DatabaseSubsystem lưu trữ và trả về dữ liệu cần thiết (thông tin người dùng) để phục vụ việc xác thực.
+![Biểu đồ squence](https://www.planttext.com/api/plantuml/png/T54xJWCn4ErzYgde8lejK2AIZWOYfPzu7s39Qwzcng0zMmgEn1MmKL8ak-d6C--dvz_JprgDnSeG7NlBGhjXZ7a2t5ZNmOUHaz5B_WZfEIUJ72FawhOfzebKdsmXfptaAtYudesFhA3jUTYNeqvg69oxMD3gwLQverqo21M591v03pIowdUMtjr06tlHkwC3nr03WBoWRtUEwXQnJMIMiAFN0fd-Gr0Fur3fCnIjxWTuWnL9Pu5Al6U-LC0rbBHu3zN7zvgY2EOjL8rBeHrjWuwH9ueDHG8jqTmQgMyV_0S00F__0m00)
 
-### Các bước hành động:
-- Bước 1: Người dùng nhập tên đăng nhập và mật khẩu vào màn hình đăng nhập.
-- Bước 2: LoginController nhận thông tin đăng nhập từ người dùng.
-- Bước 3: LoginController gọi UserService để kiểm tra tính hợp lệ của tên đăng nhập và mật khẩu.
-- Bước 4: UserService kiểm tra thông tin đăng nhập với cơ sở dữ liệu. Nếu thông tin đúng, trả về thông tin người dùng và quyền truy cập.
-- Bước 5: LoginController nhận thông tin từ UserService và xác thực.
-- Nếu thông tin hợp lệ, chuyển hướng người dùng đến trang chính của hệ thống.
-- Nếu thông tin sai, hiển thị thông báo lỗi và yêu cầu người dùng thử lại.
-- Bước 6: Sau khi đăng nhập thành công, hệ thống lưu trữ thông tin người dùng vào phiên làm việc (session).
+## 2. Simplify Sequence Diagrams Using Subsystems
+### Mô tả: 
+LoginController: Hệ thống con chịu trách nhiệm giao tiếp với người dùng.
+AuthenticationService: Hệ thống con xử lý logic xác thực.
+DatabaseSubsystem: Hệ thống con lưu trữ và truy xuất dữ liệu người dùng.
+![Biểu đồ]
 
-### Tại sao thiết kế như vậy:
-Đảm bảo tính bảo mật và xác thực người dùng thông qua việc kiểm tra tên đăng nhập và mật khẩu.
+## 3. Describe Persistence-Related Behavior
+### Mô tả:
+DatabaseSubsystem lưu trữ thông tin người dùng.
+Dữ liệu được truy xuất bằng cách thực hiện truy vấn dựa trên username.
+Nếu tìm thấy thông tin khớp, dữ liệu sẽ được trả về để xác thực.
 
-Quy trình đăng nhập được phân chia rõ ràng thành các bước từ thu thập thông tin đến xác thực và xử lý lỗi.
+![Biểu đồ lớp]
 
-Sử dụng session để lưu trữ thông tin người dùng, giúp duy trì phiên làm việc trong suốt quá trình sử dụng hệ thống.
+## 4. Refine the Flow of Events Description
+### 4.1 Basic Flow:
+
+### 4.2 Alternative Flow:
+
+### Lý Do:
+
+
+## 5. Unify Classes and Subsystems
+### Hợp nhất các lớp và hệ thống con:
+
+
+![Biểu đồ]
+
+## Lý Do:
 
