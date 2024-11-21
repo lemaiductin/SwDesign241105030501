@@ -45,7 +45,8 @@
 # Use Case: Maintain Purchase Order
 ## 1. Describe Interaction Among Design Objects
 ### Mô tả:
-- Ca sử dụng này cho phép nhân viên mua hàng thêm, sửa, hoặc xóa đơn hàng trong hệ thống. Nhân viên tương tác với hệ thống để cập nhật thông tin, và hệ thống lưu trữ các thay đổi vào cơ sở dữ liệu.
+- Ca sử dụng này cho phép nhân viên mua hàng thêm, sửa, hoặc xóa đơn hàng trong hệ thống.
+- Nhân viên tương tác với hệ thống để cập nhật thông tin, và hệ thống lưu trữ các thay đổi vào cơ sở dữ liệu.
   
 ![Diagram](https://www.planttext.com/api/plantuml/png/N90n3i8m34NtdC9YHzqxeD96hA1MFO19N8WKaifnnE4OE19Ne20GjAFr__l_ou_RlKg2BFdY5Hg938VCvep9XLCdE0ngd5Hdt8X1OFKHQS-Mk8b1E7fFl09Cy3ldZ4R1uyIyJRfMQj40wyqVMyBMsg8VBGeLcZm9VISHl6lLp_n2TLt2WNY8V86cxJN4aHZ5nP2Khc6zI6z9CWVeiZ6KKh53vpFJB7CY5XDBwCxnEh4fUr4L1VlwrnC00F__0m00)
 
@@ -53,8 +54,8 @@
 ### Mô tả: 
 Sơ đồ tuần tự được chia thành hai hệ thống con:
 - Purchase Order Subsystem: Quản lý logic xử lý đơn hàng.
-  
 - Database Subsystem: Lưu trữ thông tin đơn hàng.
+
 ![Diagram](https://www.planttext.com/api/plantuml/png/P92nQiD044Jx-uh5lL2l8jYnI6iXuTgixbRnWNGdTlSm_hOK-IJ_WYK8HkUqE_DcXdty_Ev5aJLDeq6haQ59RAyeFdntYiDWvaNrriyO57P_8i697J5qgPUxA4qxG87cT7aTSgn6nNx5Sg3-t03chHYAZoonWeDpvNbsg5JMD98Iv7FCrhxYs_mA6k8XyWJ7zbn3d8bHVGnYjYue_hMsf8d3ijnQ4Yc_q8-9wQrhfVBv5NJNU5jeIQEQFGMtllW9003__mC0)
 
 ## 3. Describe Persistence-Related Behavior
@@ -68,6 +69,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Create: Tạo mới đơn hàng.
 - Update: Cập nhật đơn hàng.
 - Delete: Xóa đơn hàng.
+  
 ![Diagram](https://www.planttext.com/api/plantuml/png/L90z3i8m38Ntdi9Z6Ng13AX8NPZuAHT84miYfMbnd0g4E1a3H-8Af2NyUR3aJthsUtxSxgLdIHnQcoahlOTr87MG7bUaaU2IGQm2fcbP2J2EVr4b6GMCFT4wzBqrI09g9kFs2UywbdRHTi6n0Ds5nhu405uEcCy439tH2Mcqo5zuJSxY5Tb4PyaK09vG1SPDG3hdnx6_hqRf5dsmN2D7_N-cefX_Tas1aAHYdvNezFY79m000F__0m00)
 
 ## 4. Refine the Flow of Events Description
