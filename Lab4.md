@@ -91,3 +91,42 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Hợp nhất các lớp và hệ thống con:
 - Tích hợp lớp PurchaseOrder vào Purchase Order Subsystem để đơn giản hóa cấu trúc.
 - Database Subsystem có thể quản lý nhiều bảng khác nhau, bao gồm bảng đơn hàng.
+
+
+  # Use Case: Create Employee Report
+## 1. Describe Interaction Among Design Objects
+### Mô tả:
+ - Ca sử dụng này cho phép quản lý tạo báo cáo nhân viên. Hệ thống sẽ tổng hợp dữ liệu từ cơ sở dữ liệu và xuất báo cáo.
+![Diagram](https://www.planttext.com/api/plantuml/png/R9113e9034NtSuh6FHTWOGXYt2h60rJeOXAOmKw7XBEvy4XUGGOGCBARJj___Utx-KgS88klAuM5M8QR8rPD_wKBtQ0HsENKM9Q3DSAsgeXtW0wMSWk-4hUwe86SthzOXe9tT2EHfKg5iH3jLxunvFJmv0IETLFPZWX6SxKmGJ7vnt0YGumoOrCZC5aQmyKJTujNIA2o5AArHKxYsOozMVwNQc2-qygjLBqaB1J3cMshopbIGgOCf_u0003__mC0)
+
+## 2. Simplify Sequence Diagrams Using Subsystems
+### Mô tả: 
+- Reporting Subsystem: Xử lý việc tạo báo cáo.
+- Data Access Subsystem: Cung cấp dữ liệu từ cơ sở dữ liệu.
+![Diagram](https://www.planttext.com/api/plantuml/png/T9112i8m44NtESNGVI-GXLHGrwAuBZ4TjD0cCJCHUZON7iahc52ffiNb_Fbl_cTUZsT5h3o7lXDAi_Lm8lJ2HQdLhLE6eJYWit4q5pY6Cmt4s1UW24QzdiISsYXMiDOQYMPSslnG8YL2kLhSar6v1II6RUywEo1-B6BkJ7H-LS8EML-_P5gBt0Fbdr0Etep0CYWYgQ-4lRVtjfagLMYQzCGt0000__y30000)
+
+## 3. Describe Persistence-Related Behavior
+### Mô tả:
+- Employee: Đối tượng chứa thông tin nhân viên idEmployee, name, reportPreferences
+- Report: Lưu trữ các báo cáo đã tạo.
+- Database: Lưu trữ dữ liệu nhân viên và các báo cáo.
+![Diagram](https://www.planttext.com/api/plantuml/png/R551Zi8m3Bpt5Jx2eH-e4E9G3YljQNc1QImKAKswjejK8LwsXtqINy25DDB2vc39CxPdxDn-VdUYo3hseUe2Yi2-7qAQYE1IWRqQA0CVhe63ie-dJ4JiwGLoDDYmdgA-4881UMgWJUCnq0C4E96sfEY3hDQb_ffzVD6GM8iBVgHl7heKzLsjOq8brremIOj5C19R-e-SLU4HPLaRu7iadfPZpEpSzEb5DmkupPM2PtgwNJrTDjcyDPoJTwPHZbhNsoBLW3VpZ9rAbRVzIy-3dHLLEufk_g4x0000__y30000)
+
+## 4. Refine the Flow of Events Description
+### 4.1 Basic Flow:
+- Người dùng chọn chức năng "Create Employee Report".
+- Hệ thống lấy dữ liệu từ cơ sở dữ liệu.
+- Hệ thống xử lý dữ liệu và tạo báo cáo.
+- Hệ thống trả báo cáo về cho người dùng.
+
+### 4.2 Alternative Flow:
+- Nếu không có dữ liệu nhân viên, hệ thống hiển thị thông báo lỗi.
+- Nếu lỗi kết nối cơ sở dữ liệu, hệ thống yêu cầu thử lại sau.
+### Lý Do:
+- Chức năng này giúp quản lý có cái nhìn tổng quan về nhân viên và hiệu suất làm việc.
+
+## 5. Unify Classes and Subsystems
+### Hợp nhất các lớp và hệ thống con:
+- Employee và Report tích hợp vào Reporting Subsystem để quản lý việc xử lý và lưu trữ báo cáo.
+- Database cung cấp dữ liệu cần thiết.
+
