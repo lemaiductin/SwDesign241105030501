@@ -1,4 +1,5 @@
 # Thiết Kế Ca Sử Dụng cho Hệ Thống "Payroll System"
+
 # Use Case: Login
 ## 1. Describe Interaction Among Design Objects
 ### Mô tả:
@@ -93,41 +94,127 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Database Subsystem có thể quản lý nhiều bảng khác nhau, bao gồm bảng đơn hàng.
 
 
-  # Use Case: Create Employee Report
+# Use Case: Create Employee Report
 ## 1. Describe Interaction Among Design Objects
 ### Mô tả:
- - Ca sử dụng này cho phép quản lý tạo báo cáo nhân viên. Hệ thống sẽ tổng hợp dữ liệu từ cơ sở dữ liệu và xuất báo cáo.
-![Diagram](https://www.planttext.com/api/plantuml/png/R9113e9034NtSuh6FHTWOGXYt2h60rJeOXAOmKw7XBEvy4XUGGOGCBARJj___Utx-KgS88klAuM5M8QR8rPD_wKBtQ0HsENKM9Q3DSAsgeXtW0wMSWk-4hUwe86SthzOXe9tT2EHfKg5iH3jLxunvFJmv0IETLFPZWX6SxKmGJ7vnt0YGumoOrCZC5aQmyKJTujNIA2o5AArHKxYsOozMVwNQc2-qygjLBqaB1J3cMshopbIGgOCf_u0003__mC0)
+ - Ca sử dụng này cho phép người dùng tạo báo cáo nhân viên, bao gồm các thông tin liên quan đến danh sách nhân viên, lương, và các thông tin tổng hợp khác.
+   
+![Diagram](https://www.planttext.com/api/plantuml/png/R951JiCm44NtFiKe-ruW2rJI55XKeaq4-y4PYKYk7SPZHCx6WYDn1UmuQIFKrTZwxy_yiN-_VxPUa2MSZK8jZk6f0VJmuedL48LUzmDQWM9_7emRYHeQ7ClEMM5d376HyElrjgab_kmrJUnylWtMzyyJ5AlgKF0DFK5nn35rhwkiLKgbVB2vMmqkeQ6FG5vWnuH2a8EgAv7uUNW9hsZwBcEJIyrAWkBm4Xv8z3iikQ2EOLGK9hqgOVz5EaHxUph0AH2FggvWivWRai0s5X-C-EnRJv_r8pjDtbENsryY_5ki9TlDwsHmlLDaqsDSUZwI9OwBBGwrZUxqlNy0003__mC0)
 
 ## 2. Simplify Sequence Diagrams Using Subsystems
 ### Mô tả: 
-- Reporting Subsystem: Xử lý việc tạo báo cáo.
-- Data Access Subsystem: Cung cấp dữ liệu từ cơ sở dữ liệu.
+- Report Generation xử lý logic tạo báo cáo.
+- Data Access giao tiếp với cơ sở dữ liệu.
   
-![Diagram](https://www.planttext.com/api/plantuml/png/T9112i8m44NtESNGVI-GXLHGrwAuBZ4TjD0cCJCHUZON7iahc52ffiNb_Fbl_cTUZsT5h3o7lXDAi_Lm8lJ2HQdLhLE6eJYWit4q5pY6Cmt4s1UW24QzdiISsYXMiDOQYMPSslnG8YL2kLhSar6v1II6RUywEo1-B6BkJ7H-LS8EML-_P5gBt0Fbdr0Etep0CYWYgQ-4lRVtjfagLMYQzCGt0000__y30000)
+![Diagram](https://www.planttext.com/api/plantuml/png/N90xZi8m48PxdsAKdWkaG125Hq41MUq11cSa8XaxUCOIETiMUoIkW6qW0Qfv_9_-UTp-_XSiw2MSZK8jpiEs0MJuPVAgZqAdknwjGD5Gxxnio997wPmj4ZOsFzaQ1PTQ4tEcfbArCJqY4nHx7BmpfguUIALKcWcp-MHQnlGIYENPKgEIiCcrX3M9Fi7gt1it46L9JNgcgn9MLz9127uEEpW4yeEgAvXzMJKamTiOE1ZX3vVltJAOPxqj5g5qoAW_FqRjwuW5sJQz-mu00F__0m00)
 
 ## 3. Describe Persistence-Related Behavior
 ### Mô tả:
-- Employee: Đối tượng chứa thông tin nhân viên idEmployee, name, reportPreferences
-- Report: Lưu trữ các báo cáo đã tạo.
-- Database: Lưu trữ dữ liệu nhân viên và các báo cáo.
-![Diagram](https://www.planttext.com/api/plantuml/png/R54nRiCm3Dpz2exfu0yOHP316G9qIb_0M4GWG9OSaWvW57rPXpwfNmYTo0BYL0C1tfruH-dlvtSdYgnZ7weke0Zi-o6aYGY-Ah1Jmy4jK0EVoZwUCn6nNqEE1XlMKzGL8HYGfmRQD9u2tK60CsbBYZx8vgteltEE8ms9jQJWUtjmgxbTYlhgrZ6XackjcANLOXY9hVt7pbHuGbdM1hYCnDEo-SpEbpwywFi2RhDIy4gFj9j7oYQ7jmlNv9rvb4UjwssnQi1RUCPEfShRFjFpO6UYQaVHpJzq0m00__y30000)
+- Truy vấn danh sách nhân viên từ cơ sở dữ liệu.
+- Lọc dữ liệu theo yêu cầu.
+- Tạo bảng dữ liệu để xuất báo cáo.
+  
+![Diagram](https://www.planttext.com/api/plantuml/png/P51B2i903Dtd5BFKHIyWKghKdM2n9mWrre6PJib4eOWdS-6Hl88CRMMOPXLUyZx9z_qfl23BtHfe37gl3hOtRY0gToVr11NgIjBS_ZWAhjORTTHUjZEOmmiIVatyq0tD6Yrrn2Xqfjwn186nMn97VE9bDA71Rc4wfdDiKUPOjR3ksg0Q7v9bkQfmO6TCkOSqOfX6sv0aYSSJ1GhgBk5dFm000F__0m00)
 
 ## 4. Refine the Flow of Events Description
 ### 4.1 Basic Flow:
-- Người dùng chọn chức năng "Create Employee Report".
-- Hệ thống lấy dữ liệu từ cơ sở dữ liệu.
-- Hệ thống xử lý dữ liệu và tạo báo cáo.
-- Hệ thống trả báo cáo về cho người dùng.
+- Người dùng yêu cầu tạo báo cáo thông qua giao diện.
+- Hệ thống xác thực yêu cầu và gửi đến EmployeeReportController.
+- EmployeeService truy vấn danh sách nhân viên thông qua EmployeeDAO.
+- EmployeeDAO thực hiện các truy vấn SQL để lấy dữ liệu từ PayrollDB.
+- Dữ liệu được định dạng và trả về dưới dạng báo cáo.
+- Báo cáo được hiển thị cho người dùng.
 
 ### 4.2 Alternative Flow:
-- Nếu không có dữ liệu nhân viên, hệ thống hiển thị thông báo lỗi.
-- Nếu lỗi kết nối cơ sở dữ liệu, hệ thống yêu cầu thử lại sau.
+- Nếu không có dữ liệu trong cơ sở dữ liệu: Hệ thống thông báo "Không có dữ liệu".
+- Nếu xảy ra lỗi kết nối cơ sở dữ liệu: Hệ thống trả về thông báo lỗi.
 ### Lý Do:
-- Chức năng này giúp quản lý có cái nhìn tổng quan về nhân viên và hiệu suất làm việc.
+- Luồng này đảm bảo tất cả các bước từ yêu cầu đến hiển thị kết quả được xử lý rõ ràng, cho phép người dùng tạo báo cáo chính xác và hiệu quả.
+
 
 ## 5. Unify Classes and Subsystems
 ### Hợp nhất các lớp và hệ thống con:
-- Employee và Report tích hợp vào Reporting Subsystem để quản lý việc xử lý và lưu trữ báo cáo.
-- Database cung cấp dữ liệu cần thiết.
+- EmployeeDAO sẽ được tích hợp vào DataAccess subsystem.
+- EmployeeReport sẽ trở thành một phần của ReportGeneration subsystem.
+- Các subsystem liên kết với nhau thông qua các phương thức dịch vụ.
+
+
+# Use Case: Maintain Employee Information
+## 1. Describe Interaction Among Design Objects
+### Mô tả:
+ - Ca sử dụng này cho phép người dùng (như quản lý nhân sự) thêm, sửa, hoặc xóa thông tin nhân viên trong hệ thống. Thông tin này được lưu trữ trong cơ sở dữ liệu thông qua các lớp liên quan.
+   
+![Diagram](https://www.planttext.com/api/plantuml/png/T94z3i8m38NtdC8Nu08P4AXbO42WLXp0j0OYfKw9NIJEni2Hk0AbKb7u6-p1UU_fqylzUfk9OjIkyGOh3H7cTUFO31icKrWqhGyNeYomnk0zHGi5dJeIXHKwrdvU8bZoFfXlInfKKZoxYYniOgX8P4mp7uBKay_N5hPjZKgGe-8EXKpo-DIETmibdWco8_A1n8ndc7pczNXx5vj1_XxsYxOWxI93gQYTVBF-RMfm5IHju8GvhQQt3crRo9sq7YyZ6QeBR6R4zVDt7W000F__0m00)
+## 2. Simplify Sequence Diagrams Using Subsystems
+### Mô tả: 
+- Hệ thống được chia thành các hệ thống con như Employee Subsystem để quản lý các tác vụ liên quan đến nhân viên và Database Subsystem để thực hiện lưu trữ dữ liệu. Việc phân chia này giúp đơn giản hóa biểu đồ tuần tự và tăng tính rõ ràng trong thiết kế.
+![Diagram](https://www.planttext.com/api/plantuml/png/P90x3eD034JxFOL5pmKe8gAG8aMQe1p0i4PQQN_29X9dIv4ZvGfXAVYbi6JPRsOiVz-VaWLx6PnLs4heuQoTyO0Cc1eLfwLfJKGla5rTj64aWdfeU6GXboMIN5m6Uq65WWtoKQ2RbLTp3kIddKq1TpHUfe8bzEQxeBPG4csi2dX6ZKAh8iMh3G7vNymb-Cxq3cfyqS5yOkVR2gWCHuiZF8W7AweahzF3VW000F__0m00)
+
+## 3. Describe Persistence-Related Behavior
+### Mô tả: 
+- Dữ liệu nhân viên được lưu trữ và truy xuất từ cơ sở dữ liệu.
+  
+![Diagram](https://www.planttext.com/api/plantuml/png/J8vB2i8m48RtESKiTT4BP24jrBMe9vWcWmJoA9a9D8WdS-6Hl886MdJv_Volz_FLis2M4hmo7fdX66QVAX7S5G0ukx465wL94SCNhf9Tl3MU4pjnAVvhZ1vprM1JcJofXrhBHnISaDToMiWKeNEXN7Tx3HVYugMvjz5nE47N7Nuv3OCnnAnwYhQT_W000F__0m00)
+
+## 4. Refine the Flow of Events Description
+### 4.1 Basic Flow:
+- Quản trị viên chọn chức năng duy trì thông tin nhân viên.
+- Hệ thống cho phép thêm mới, chỉnh sửa hoặc xóa nhân viên.
+- Dữ liệu được cập nhật vào cơ sở dữ liệu.
+- Hệ thống trả về kết quả cập nhật.
+
+### 4.2 Alternative Flow:
+- Hiển thị thông báo lỗi nếu dữ liệu không hợp lệ (ví dụ: thông tin bị thiếu hoặc định dạng sai).
+- Hiển thị thông báo lỗi hệ thống nếu không thể lưu dữ liệu.
+### Lý Do:
+- Đảm bảo hệ thống hoạt động chính xác, xử lý đầy đủ các tình huống nhập liệu và lỗi.
+
+
+## 5. Unify Classes and Subsystems
+### Hợp nhất các lớp và hệ thống con:
+- Gộp các lớp EmployeeController, EmployeeService, và EmployeeDAO vào Employee Subsystem.
+- Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
+
+
+# Use Case: Run Payroll
+## 1. Describe Interaction Among Design Objects
+### Mô tả:
+ - Ca sử dụng này cho phép quản trị viên thực hiện tính toán bảng lương dựa trên dữ liệu thời gian làm việc và thông tin nhân viên.
+   
+![Diagram](https://www.planttext.com/api/plantuml/png/J8vB2i8m48RtESKiTT4BP24jrBMe9vWcWmJoA9a9D8WdS-6Hl886MdJv_Volz_FLis2M4hmo7fdX66QVAX7S5G0ukx465wL94SCNhf9Tl3MU4pjnAVvhZ1vprM1JcJofXrhBHnISaDToMiWKeNEXN7Tx3HVYugMvjz5nE47N7Nuv3OCnnAnwYhQT_W000F__0m00)
+
+## 2. Simplify Sequence Diagrams Using Subsystems
+### Mô tả: 
+- Hệ thống được phân chia thành các hệ thống con như Payroll Subsystem để xử lý bảng lương và Database Subsystem để lưu trữ thông tin. Sự tách biệt này giúp giảm độ phức tạp của quy trình tính lương và làm rõ vai trò của từng thành phần trong hệ thống.
+![Diagram](https://www.planttext.com/api/plantuml/png/Z9512i8m44NtESNGVI_GXLIiUr4lC6r622HfI2P2p-R28ta5crPhhOBkml3U_C_aThcMWT5pD5fWmws77NQ-rNejZRA00J0zXEiPrIY7bY5x8728TUW2ayaIwCRfD7ntAcIiCT12alMB5qCKvAkFLGLiK3TH8zEpdrWooPjjAs1Fx1MT2RR6wROZ0hGIZifGWrv2AYHc0kHVW_ijqTkH_XbvmFDKyD-0JMjFofl1_PBGEyDP2gXKS1gxlb68caL9LgPVkmC00F__0m00)
+
+## 3. Describe Persistence-Related Behavior
+### Mô tả: 
+- Dữ liệu nhân viên được lưu trữ và truy xuất từ cơ sở dữ liệu.
+  
+![Diagram](https://www.planttext.com/api/plantuml/png/J8uz2iCm58Dtd-ADxP0BU2W9PEdKlnEys1eABqwmdw6cz6GTUgHUeJK9j8lW4nBI-_bgatBKF8fnmYdHaKkSHEXkY6XUOEyjNODM1-CiKm7-h02zi70ibloK1y7Q716qPuMbgkPXreKlyS09omHkS5bnoeXbixLqHigYDRq-wRi3DStkLxFKEOUKJ8lWw_4F0000__y30000)
+
+## 4. Refine the Flow of Events Description
+### 4.1 Basic Flow:
+- Quản trị viên chọn chức năng tính bảng lương.
+- Hệ thống lấy dữ liệu chấm công và thông tin nhân viên từ cơ sở dữ liệu.
+- Hệ thống thực hiện tính toán bảng lương.
+- Kết quả được lưu vào cơ sở dữ liệu.
+- Hệ thống trả về trạng thái hoàn tất.
+
+### 4.2 Alternative Flow:
+- Hiển thị thông báo lỗi nếu thiếu dữ liệu chấm công hoặc thông tin nhân viên.
+- Hiển thị thông báo lỗi hệ thống nếu không thể lưu kết quả.
+### Lý Do:
+- Chắc chắn Hệ thống hoạt động chính xác, xử lý lỗi và hoàn thành quy trình tính bảng lương.
+
+
+## 5. Unify Classes and Subsystems
+### Hợp nhất các lớp và hệ thống con:
+- Gộp các lớp PayrollController, PayrollService, và PayrollDAO vào Payroll Subsystem.
+- Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
+
+
+
+
 
