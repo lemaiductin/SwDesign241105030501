@@ -42,6 +42,8 @@
 - User được tích hợp vào Authentication Subsystem để quản lý các thông tin đăng nhập và quyền truy cập của người dùng.
 - AuthenticationService sẽ thực hiện xác thực và tương tác với Database để lấy thông tin người dùng, kiểm tra tính hợp lệ và trả kết quả về cho người dùng.
 
+![Diagram](https://www.planttext.com/api/plantuml/png/V55BZi8m3Dtt51OhM7015gW8Re3c02PzAX5foiHE4KASZ0L7cYjCMZwJZaRZvNlFpy_sr-rUYdBGsBZYoER0DMYoYhg7LsjORUjf6tTo5aKpeKj1gOnZ4HghjWYTDNWg7jMninKhrW5LhsGdqrd6yuy3FWJXILwp8JsSUSuf9i1pWmmw9k6f3LK6XTOX6rH3UwCDbEqxGpvcmyexbd7ypuXm7leIEmektE4NyN3x-oRpvR37WgnN13OgTBAw_x_Z5ManvB2GONLAz-JYMfJmLV-pRm000F__0m00)
+
 
 # Use Case: Maintain Purchase Order
 ## 1. Describe Interaction Among Design Objects
@@ -92,7 +94,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Hợp nhất các lớp và hệ thống con:
 - Tích hợp lớp PurchaseOrder vào Purchase Order Subsystem để đơn giản hóa cấu trúc.
 - Database Subsystem có thể quản lý nhiều bảng khác nhau, bao gồm bảng đơn hàng.
-
+![Diagram](https://www.planttext.com/api/plantuml/png/T94z3i8m38Ntd2Bg10CNO415wi844YTm4wkjI7yKEo24UZ86ZiGLQ8X0QGiUlsVhFTlF-oCb1ikkDg83TO82PN9mLfL0AFTMevL7bzEL6Ej4teGSIXaWaf-kq1IKKAqdksnACc2C6BckCnNQ277BOBPrwngEgB8uJBvj5ik8kqx_v1eDZdaVnHvIGEwNYnCJdCE0L_-PpBJ8QAOLo5CXf1YVRRNv1bhBgc6qe9ZafU9Iz2B5HllFl0000F__0m00)
 
 # Use Case: Create Employee Report
 ## 1. Describe Interaction Among Design Objects
@@ -137,6 +139,8 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - EmployeeDAO sẽ được tích hợp vào DataAccess subsystem.
 - EmployeeReport sẽ trở thành một phần của ReportGeneration subsystem.
 - Các subsystem liên kết với nhau thông qua các phương thức dịch vụ.
+
+[!Diagram](https://www.planttext.com/api/plantuml/png/T90z3i8m38NtdCBg10CNO4150h732Kmm9I9_Ibn1XNeo1ex45MZ9agZWoNhlsP_iz_DLHyR0hT72exnYGr3joRl0i2DB0Lav2uVs6Bl8P2fu21XAQemHKZ3B9JDLasHAeTayiyvACuMjyTfrH1jaB6qN378nrsVKCR-MaeQsvF7_ZL_WHARxYFW1cXosM6NO9IWxh4F94MwABw8NDTdJ-CCF0000__y30000)
 
 
 # Use Case: Maintain Employee Information
@@ -213,7 +217,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Hợp nhất các lớp và hệ thống con:
 - Gộp các lớp PayrollController, PayrollService, và PayrollDAO vào Payroll Subsystem.
 - Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
-
+![Diagram](https://www.planttext.com/api/plantuml/png/T5512i8m4Bpt5S6J7lo01n5HmPjGFx0csrBS9YMR24LycGUVv1VKDYq9nRrbPtPdTl9-lZRim3fVKzQ0l4A9OdQ2rXeYSR968dEbIv7x2xVii9w9UoQ-9GcOHM06eh41xAlfmUCkxlNCC3TVH904afx0OGu4jWtO8rBRrmsP5Z5HmT1CP3JK63svsnWr52elNMKqJqIseA_ZjOcIiw2vG7lmMd5Y_GPKgQ_pyuy1tUB4_YIcvNeyPZLaWZma9WfZ_yub_bQZAHwEV6GRrEhtdny0003__mC0)
 
 # Use Case: Create Administrative Report
 ## 1. Describe Interaction Among Design Objects
@@ -251,6 +255,8 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Hợp nhất các lớp và hệ thống con:
 - Hệ thống tạo báo cáo có thể bao gồm các lớp như ReportManager để xử lý logic tạo báo cáo, EmployeeData và PayrollData để lưu trữ thông tin người lao động và bảng lương. Các lớp này cùng làm việc trong ReportGenerationSubsystem để đáp ứng yêu cầu của quản lý.
 
+![Diagram](https://www.planttext.com/api/plantuml/png/T951Zi8m34NtFKN42XPp0HOZ941ejiDSmBIVWaZIo7ON5U9aB3ZIN64A2IYb6Y-_dV_ydT_hRI5AhAspHQ3oH3NCv1kXOJLB1kcnyMRRxgGJXPkOSs7wAYs9c3YsWGUJDfnwiVZH-rgDf9yk81Fh-1hHQphBMlkZLV2Ab99yoTXh5spJ0GCeaZZ0Ud8vi4BeupfupKGXIzoD87VsZWIl_0FQ7beUddjaQoRB_YB3LD7v_MWVdwyiSrEJ7i1Ygjxjl-dHKlF8adJWub8iuAlxX_u1003__mC0)
+
 
 # Use Case: Maintain Timecard
 ## 1. Describe Interaction Among Design Objects
@@ -284,6 +290,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Hợp nhất các lớp và hệ thống con:
 - Hệ thống có thể bao gồm lớp TimecardManager để xử lý dữ liệu thời gian làm việc, lớp TimecardData để lưu trữ các ghi chép thời gian làm việc của nhân viên. Các lớp này làm việc trong TimecardSubsystem để quản lý dữ liệu.
 
-
+![Diagram](https://www.planttext.com/api/plantuml/png/R94z3i8m38NtdYBg10CNO40TMWa65gZ4719JeZP9vQH25Uh963WILo3zLLhm-DdnUy_vlDwHiHHj9OkWf2od6P0m5H8OHKwEL3aWGLbohgwcDXPaI9u1SSKAQWoPHdlObntW8VRWNLTeBXfpu1vzE11J2nwgIkx0k7YrxbgDfvd8ij0rm4mJ1ZZJL5JwcqjjX1LQBLmLzMbqq2oYfUXk8bGsfP_dRBlxDjVWSXaWKHRhMOBfNflTb6DB49X6Rhh3aPl6dz6_NhQ3KlykQ88856y_yWi00F__0m00)
 
 
