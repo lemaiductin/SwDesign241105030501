@@ -103,6 +103,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Mô tả: 
 - Reporting Subsystem: Xử lý việc tạo báo cáo.
 - Data Access Subsystem: Cung cấp dữ liệu từ cơ sở dữ liệu.
+  
 ![Diagram](https://www.planttext.com/api/plantuml/png/T9112i8m44NtESNGVI-GXLHGrwAuBZ4TjD0cCJCHUZON7iahc52ffiNb_Fbl_cTUZsT5h3o7lXDAi_Lm8lJ2HQdLhLE6eJYWit4q5pY6Cmt4s1UW24QzdiISsYXMiDOQYMPSslnG8YL2kLhSar6v1II6RUywEo1-B6BkJ7H-LS8EML-_P5gBt0Fbdr0Etep0CYWYgQ-4lRVtjfagLMYQzCGt0000__y30000)
 
 ## 3. Describe Persistence-Related Behavior
@@ -110,7 +111,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Employee: Đối tượng chứa thông tin nhân viên idEmployee, name, reportPreferences
 - Report: Lưu trữ các báo cáo đã tạo.
 - Database: Lưu trữ dữ liệu nhân viên và các báo cáo.
-![Diagram](https://www.planttext.com/api/plantuml/png/R551Zi8m3Bpt5Jx2eH-e4E9G3YljQNc1QImKAKswjejK8LwsXtqINy25DDB2vc39CxPdxDn-VdUYo3hseUe2Yi2-7qAQYE1IWRqQA0CVhe63ie-dJ4JiwGLoDDYmdgA-4881UMgWJUCnq0C4E96sfEY3hDQb_ffzVD6GM8iBVgHl7heKzLsjOq8brremIOj5C19R-e-SLU4HPLaRu7iadfPZpEpSzEb5DmkupPM2PtgwNJrTDjcyDPoJTwPHZbhNsoBLW3VpZ9rAbRVzIy-3dHLLEufk_g4x0000__y30000)
+![Diagram](https://www.planttext.com/api/plantuml/png/R54nRiCm3Dpz2exfu0yOHP316G9qIb_0M4GWG9OSaWvW57rPXpwfNmYTo0BYL0C1tfruH-dlvtSdYgnZ7weke0Zi-o6aYGY-Ah1Jmy4jK0EVoZwUCn6nNqEE1XlMKzGL8HYGfmRQD9u2tK60CsbBYZx8vgteltEE8ms9jQJWUtjmgxbTYlhgrZ6XackjcANLOXY9hVt7pbHuGbdM1hYCnDEo-SpEbpwywFi2RhDIy4gFj9j7oYQ7jmlNv9rvb4UjwssnQi1RUCPEfShRFjFpO6UYQaVHpJzq0m00__y30000)
 
 ## 4. Refine the Flow of Events Description
 ### 4.1 Basic Flow:
