@@ -181,7 +181,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 ### Mô tả:
  - Ca sử dụng này cho phép quản trị viên thực hiện tính toán bảng lương dựa trên dữ liệu thời gian làm việc và thông tin nhân viên.
    
-![Diagram](https://www.planttext.com/api/plantuml/png/J8vB2i8m48RtESKiTT4BP24jrBMe9vWcWmJoA9a9D8WdS-6Hl886MdJv_Volz_FLis2M4hmo7fdX66QVAX7S5G0ukx465wL94SCNhf9Tl3MU4pjnAVvhZ1vprM1JcJofXrhBHnISaDToMiWKeNEXN7Tx3HVYugMvjz5nE47N7Nuv3OCnnAnwYhQT_W000F__0m00)
+![Diagram](https://www.planttext.com/api/plantuml/png/T97D3S8m38NldS8Bi40F2DHo1b4Mi58ZHKeQS9nAdOq38x42JKNw8zfJ53z_pthsv_K-U46MO4s6IXp31JjsnXnhgvji_e7TFec5QoI-n3bSwHd8IvAWGAE2GT5knAVscKT5t6f5ELpOAV8-6MLBFH8tRKaXr-Nn7ES9Qsffh4A9WYlKoJwCwuYMLAfkKR_A05NO0odNlBzNORSIfGzwrsm7yCzxQtqIk85AK89VMzY43LV8eTJ-OR3hIH-CP0TgwdYzBm000F__0m00)
 
 ## 2. Simplify Sequence Diagrams Using Subsystems
 ### Mô tả: 
