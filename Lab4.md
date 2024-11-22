@@ -140,7 +140,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - EmployeeReport sẽ trở thành một phần của ReportGeneration subsystem.
 - Các subsystem liên kết với nhau thông qua các phương thức dịch vụ.
 
-[!Diagram](https://www.planttext.com/api/plantuml/png/T90z3i8m38NtdCBg10CNO4150h732Kmm9I9_Ibn1XNeo1ex45MZ9agZWoNhlsP_iz_DLHyR0hT72exnYGr3joRl0i2DB0Lav2uVs6Bl8P2fu21XAQemHKZ3B9JDLasHAeTayiyvACuMjyTfrH1jaB6qN378nrsVKCR-MaeQsvF7_ZL_WHARxYFW1cXosM6NO9IWxh4F94MwABw8NDTdJ-CCF0000__y30000)
+![Diagram](https://www.planttext.com/api/plantuml/png/T90z3i8m38NtdCBg10CNO4150h732Kmm9I9_Ibn1XNeo1ex45MZ9agZWoNhlsP_iz_DLHyR0hT72exnYGr3joRl0i2DB0Lav2uVs6Bl8P2fu21XAQemHKZ3B9JDLasHAeTayiyvACuMjyTfrH1jaB6qN378nrsVKCR-MaeQsvF7_ZL_WHARxYFW1cXosM6NO9IWxh4F94MwABw8NDTdJ-CCF0000__y30000)
 
 
 # Use Case: Maintain Employee Information
