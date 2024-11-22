@@ -15,11 +15,11 @@
 
 ## 3. Describe Persistence-Related Behavior
 ### Mô tả:
-# User chứa các thông tin quan trọng:
+### User chứa các thông tin quan trọng:
 - Username
 - Password
 - Role
-# Các thao tác liên quan đến việc truy vấn và xác thực thông tin người dùng từ cơ sở dữ liệu:
+### Các thao tác liên quan đến việc truy vấn và xác thực thông tin người dùng từ cơ sở dữ liệu:
 - Validate: Kiểm tra tính hợp lệ của tài khoản người dùng.
 - Authenticate: Xác thực người dùng vào hệ thống.
 
