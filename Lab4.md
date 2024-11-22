@@ -179,6 +179,7 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Gộp các lớp EmployeeController, EmployeeService, và EmployeeDAO vào Employee Subsystem.
 - Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
 
+![Diagram](https://www.planttext.com/api/plantuml/png/T59Bhi8m3Dpt51Qhnu8Bi40iYWGBDd02GmoAoAUANQJgYPEznJiILw2q9N85U14fCxR7dkJ-zxzamIIrTqM5nmkU2IOhNxdO4C4MGmju2WBx-i0D2_a9_1RGnj4XC-JK7ko31d1JAZ2W9tMj8bknCIY8qM5g551N1eLA4hIEVwOTSrFYwrsUQgIFnhpc6gfqlu-K8KTlbDOgKV20J9yLMMBArS_KKVD4aYnTloUCrHNTJz0TsUdPGYy-1zyz4eCDfvWyPbErEstDsmBpmGy6Cr35hLXICC-_y0000F__0m00)
 
 # Use Case: Run Payroll
 ## 1. Describe Interaction Among Design Objects
