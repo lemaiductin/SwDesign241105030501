@@ -38,7 +38,6 @@
 - Login là chức năng cơ bản nhất trong việc bảo mật và quản lý quyền truy cập hệ thống. Việc kiểm tra thông tin đăng nhập và thông báo cho người dùng khi có lỗi đảm bảo tính bảo mật và bảo  vệ hệ thống.
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - User được tích hợp vào Authentication Subsystem để quản lý các thông tin đăng nhập và quyền truy cập của người dùng.
 - AuthenticationService sẽ thực hiện xác thực và tương tác với Database để lấy thông tin người dùng, kiểm tra tính hợp lệ và trả kết quả về cho người dùng.
 
@@ -91,7 +90,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - Tích hợp lớp PurchaseOrder vào Purchase Order Subsystem để đơn giản hóa cấu trúc.
 - Database Subsystem có thể quản lý nhiều bảng khác nhau, bao gồm bảng đơn hàng.
 ![Diagram](https://www.planttext.com/api/plantuml/png/T94z3i8m38Ntd2Bg10CNO415wi844YTm4wkjI7yKEo24UZ86ZiGLQ8X0QGiUlsVhFTlF-oCb1ikkDg83TO82PN9mLfL0AFTMevL7bzEL6Ej4teGSIXaWaf-kq1IKKAqdksnACc2C6BckCnNQ277BOBPrwngEgB8uJBvj5ik8kqx_v1eDZdaVnHvIGEwNYnCJdCE0L_-PpBJ8QAOLo5CXf1YVRRNv1bhBgc6qe9ZafU9Iz2B5HllFl0000F__0m00)
@@ -135,7 +133,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - EmployeeDAO sẽ được tích hợp vào DataAccess subsystem.
 - EmployeeReport sẽ trở thành một phần của ReportGeneration subsystem.
 - Các subsystem liên kết với nhau thông qua các phương thức dịch vụ.
@@ -175,7 +172,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - Gộp các lớp EmployeeController, EmployeeService, và EmployeeDAO vào Employee Subsystem.
 - Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
 
@@ -215,7 +211,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - Gộp các lớp PayrollController, PayrollService, và PayrollDAO vào Payroll Subsystem.
 - Database giữ vai trò riêng biệt để xử lý truy cập dữ liệu.
 ![Diagram](https://www.planttext.com/api/plantuml/png/T5512i8m4Bpt5S6J7lo01n5HmPjGFx0csrBS9YMR24LycGUVv1VKDYq9nRrbPtPdTl9-lZRim3fVKzQ0l4A9OdQ2rXeYSR968dEbIv7x2xVii9w9UoQ-9GcOHM06eh41xAlfmUCkxlNCC3TVH904afx0OGu4jWtO8rBRrmsP5Z5HmT1CP3JK63svsnWr52elNMKqJqIseA_ZjOcIiw2vG7lmMd5Y_GPKgQ_pyuy1tUB4_YIcvNeyPZLaWZma9WfZ_yub_bQZAHwEV6GRrEhtdny0003__mC0)
@@ -252,7 +247,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Lý do này để đảm bảo tính linh hoạt khi dữ liệu thay đổi hoặc có lỗi trong quá trình truy xuất.
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - Hợp nhất các lớp và hệ thống con:
 - Hệ thống tạo báo cáo có thể bao gồm các lớp như ReportManager để xử lý logic tạo báo cáo, EmployeeData và PayrollData để lưu trữ thông tin người lao động và bảng lương. Các lớp này cùng làm việc trong ReportGenerationSubsystem để đáp ứng yêu cầu của quản lý.
 
@@ -288,7 +282,6 @@ Lớp PurchaseOrder lưu trữ các thuộc tính của đơn hàng, bao gồm:
 - Điều này giúp đảm bảo rằng dữ liệu chính xác và hợp lệ trước khi được lưu trữ trong cơ sở dữ liệu.
 
 ## 5. Unify Classes and Subsystems
-### Hợp nhất các lớp và hệ thống con:
 - Hệ thống có thể bao gồm lớp TimecardManager để xử lý dữ liệu thời gian làm việc, lớp TimecardData để lưu trữ các ghi chép thời gian làm việc của nhân viên. Các lớp này làm việc trong TimecardSubsystem để quản lý dữ liệu.
 
 ![Diagram](https://www.planttext.com/api/plantuml/png/R94z3i8m38NtdYBg10CNO40TMWa65gZ4719JeZP9vQH25Uh963WILo3zLLhm-DdnUy_vlDwHiHHj9OkWf2od6P0m5H8OHKwEL3aWGLbohgwcDXPaI9u1SSKAQWoPHdlObntW8VRWNLTeBXfpu1vzE11J2nwgIkx0k7YrxbgDfvd8ij0rm4mJ1ZZJL5JwcqjjX1LQBLmLzMbqq2oYfUXk8bGsfP_dRBlxDjVWSXaWKHRhMOBfNflTb6DB49X6Rhh3aPl6dz6_NhQ3KlykQ88856y_yWi00F__0m00)
