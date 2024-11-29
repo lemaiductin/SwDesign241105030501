@@ -176,7 +176,7 @@ Payment Subsystem phụ thuộc vào Purchase Order Management Subsystem để t
 
 Approval Subsystem phụ thuộc vào Purchase Order Management Subsystem để phê duyệt các đơn đặt hàng.
 
-### Checkpoints:
+### 4.Checkpoints:
 Kiểm tra tình trạng kho hàng để đảm bảo có đủ nguyên vật liệu (phụ thuộc vào Inventory Subsystem).
 
 Đảm bảo các đơn hàng được phê duyệt qua Approval Subsystem trước khi được xử lý.
