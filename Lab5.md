@@ -16,28 +16,28 @@ Database Subsystem:
 Authorization Subsystem:
 - Gán vai trò (role) và quyền hạn (permissions) cho người dùng sau khi đăng nhập.
 ### 2. Document Subsystem Elements
-#### Subsystem 1: User Interface
+#### User Interface Subsystem 
 Chức năng:
 - Giao diện nhập tên đăng nhập và mật khẩu.
 - Hiển thị thông báo lỗi hoặc chuyển hướng sau khi đăng nhập thành công.
 Thành phần:
 - LoginForm: Biểu mẫu đăng nhập.
 - ErrorMessage: Hiển thị thông báo lỗi khi đăng nhập thất bại.
-#### Subsystem 2: Authentication
+#### Authentication Subsystem 
 Chức năng:
 - Xác thực thông tin người dùng.
 - Mã hóa và kiểm tra mật khẩu.
 Thành phần:
 - Authenticator: Kiểm tra thông tin người dùng với cơ sở dữ liệu.
 - PasswordHasher: Xử lý mã hóa mật khẩu.
-#### Subsystem 3: Database
+#### Database Subsystem 
 Chức năng:
 - Lưu trữ thông tin người dùng và phiên đăng nhập.
 - Truy xuất thông tin dựa trên tên đăng nhập.
 Thành phần:
 - UserTable: Bảng dữ liệu chứa thông tin người dùng.
 - SessionTable: Bảng dữ liệu chứa thông tin phiên.
-#### Subsystem 4: Authorization
+#### Authorization Subsystem 
 Chức năng:
 - Xác định vai trò và quyền hạn của người dùng sau khi đăng nhập.
 Thành phần:
@@ -82,73 +82,106 @@ Hệ thống hiển thị thông báo lỗi khi người dùng nhập sai thông
 
 # Thiết kế hệ thống con Run Payroll
 ### 1.Distribute subsystem behavior to subsystem elements:
-#### User Interface Subsystem: 
-Nhận yêu cầu từ người dùng để chạy bảng lương.
-
-#### Payroll Calculation Subsystem:
-Tính toán bảng lương cho từng nhân viên dựa trên dữ liệu công việc, giờ làm việc, thuế, phụ cấp, v.v.
-
+#### Payroll Calculation Subsystem: 
+Xử lý tất cả các tính toán liên quan đến việc tính toán tiền lương của nhân viên, bao gồm việc tính toán lương cơ bản, các khoản phụ cấp, thuế, và các khoản trừ.
+#### Tax Calculation Subsystem: 
+Tính toán các khoản thuế phải trả dựa trên dữ liệu của nhân viên và quy định thuế.
 #### Employee Database Subsystem: 
-Cung cấp thông tin về nhân viên như giờ làm, mức lương cơ bản, các khoản phụ cấp, v.v.
-
+Lưu trữ thông tin về nhân viên như mức lương, số giờ làm việc, các khoản phụ cấp, thuế phải trả, v.v.
 #### Payment Processing Subsystem: 
-Tiến hành xử lý thanh toán và chuyển tiền cho nhân viên.
-
-#### Report Generation Subsystem: 
-Tạo báo cáo về bảng lương để gửi cho quản lý và nhân viên.
-
+Xử lý việc thanh toán tiền lương cho nhân viên, có thể bao gồm việc chuyển tiền qua ngân hàng hoặc các hình thức thanh toán khác.
 #### Notification Subsystem: 
-Gửi thông báo cho nhân viên về kết quả bảng lương (ví dụ: qua email hoặc ứng dụng).
+Thông báo cho nhân viên về thông tin liên quan đến tiền lương và các khoản thanh toán.
+
+### 2.Document subsystem elements:
+#### Payroll Calculation Subsystem: 
+Xử lý tính toán các khoản chi trả, bao gồm lương cơ bản, phúc lợi, thuế và bảo hiểm.
+
+#### Employee Data Subsystem:
+Quản lý và cung cấp thông tin nhân viên cần thiết để tính toán lương, chẳng hạn như mức lương cơ bản, các khoản phụ cấp, giờ làm việc.
+
+#### Payment Subsystem:
+Quản lý việc thanh toán lương cho nhân viên thông qua các phương thức thanh toán (chuyển khoản ngân hàng, séc, tiền mặt).
+
+#### Tax Calculation Subsystem: 
+Tính toán các khoản thuế cần thiết phải trừ từ lương của nhân viên.
+
+#### Accounting Subsystem:
+Đảm bảo việc ghi chép và báo cáo các khoản thanh toán đúng đắn
+
+### 3.Describe Subsystem Dependencies:
+Payroll Calculation Subsystem phụ thuộc vào Employee Data Subsystem để có thông tin về nhân viên.
+
+Payroll Calculation Subsystem cũng phụ thuộc vào Tax Calculation Subsystem để tính toán thuế thu nhập.
+
+Payment Subsystem phụ thuộc vào Payroll Calculation Subsystem để thực hiện các khoản thanh toán sau khi tính toán lương.
+
+Accounting Subsystem phụ thuộc vào Payment Subsystem để lưu trữ các giao dịch thanh toán.
+
+### 4.Checkpoints
+Đảm bảo thông tin về nhân viên được cập nhật đầy đủ trong Employee Data Subsystem.
+
+Tính toán chính xác các khoản thuế và bảo hiểm từ Tax Calculation Subsystem.
+
+Kiểm tra rằng các khoản thanh toán được thực hiện chính xác từ Payment Subsystem.
+
+
+### Sơ đồ phụ thuộc giữa các hệ thống con Run Payroll
+![Dependency - Run Payroll](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3XTNGM9oTc9wge9IK6cUGa1YPL1-JewIGZMNWa8qa5S4v2au9-Oab-OabcJcvoa4boOLLnQNfER6AkZgsYb4k-OMvEHNfgOgk2IM92B94gi_9B42XppKXDpKl18CNVXD1kbqJ4xEByqhoSnBnwOPpL2kMW00003__mC0)
+
+
+# Thiết kế hệ thống con Maintain Purchase Order
+### 1.Distribute subsystem behavior to subsystem elements:
+#### Purchase Order Management Subsystem:
+Quản lý các đơn đặt hàng từ khi bắt đầu đến khi hoàn thành, bao gồm tạo, sửa, và theo dõi đơn hàng.
+
+#### Inventory Subsystem:
+Quản lý kho hàng, kiểm tra tình trạng kho để đảm bảo khả năng cung cấp cho đơn hàng.
+
+#### Supplier Subsystem: 
+Quản lý thông tin nhà cung cấp, bao gồm các điều kiện giao hàng và thanh toán.
+
+#### Payment Subsystem: 
+Quản lý việc thanh toán cho nhà cung cấp.
+
+#### Approval Subsystem: 
+Xử lý phê duyệt các đơn hàng trước khi chúng được hoàn thành.
+
 
 ### 2.Document subsystem elements:
 
-#### User Interface Subsystem:
-Tương tác với người dùng, nhận yêu cầu và hiển thị kết quả.
+#### Purchase Order Management Subsystem: 
+Chịu trách nhiệm tạo, sửa đổi, và theo dõi các đơn đặt hàng.
 
-#### Payroll Calculation Subsystem:
-Tính toán bảng lương và các khoản khấu trừ, thuế.
+#### Inventory Subsystem: 
+Đảm bảo kho hàng có đủ nguyên vật liệu để cung cấp cho các đơn hàng.
 
-#### Employee Database Subsystem:
-Chứa thông tin của nhân viên, bao gồm mức lương, ngày công, ngày nghỉ
+#### Supplier Subsystem: 
+Quản lý các nhà cung cấp, các điều khoản thanh toán, và thời gian giao hàng.
 
-#### Payment Processing Subsystem:
-Thực hiện thanh toán và chuyển tiền cho nhân viên.
+#### Payment Subsystem: 
+Quản lý các khoản thanh toán cho nhà cung cấp.
 
-### Report Generation Subsystem:
-Tạo báo cáo cho bảng lương.
+#### Approval Subsystem:
+Quản lý quy trình phê duyệt đơn hàng từ các cấp có thẩm quyền.
 
-#### Notification Subsystem:
-Gửi thông báo cho nhân viên về bảng lương đã được thực hiện.
 
 ### 3.Describe Subsystem Dependencies:
-User Interface Subsystem phụ thuộc vào Payroll Calculation Subsystem để tính toán bảng lương và nhận thông tin nhân viên từ Employee Database Subsystem.
 
-Payroll Calculation Subsystem sẽ yêu cầu thông tin từ Employee Database Subsystem để thực hiện tính toán.
+Purchase Order Management Subsystem phụ thuộc vào Inventory Subsystem để đảm bảo có đủ hàng hóa để cung cấp cho đơn hàng.
 
-Payroll Calculation Subsystem gửi kết quả thanh toán cho Payment Processing Subsystem để thực hiện thanh toán.
+Purchase Order Management Subsystem phụ thuộc vào Supplier Subsystem để chọn nhà cung cấp phù hợp cho các đơn hàng.
 
-Report Generation Subsystem nhận dữ liệu từ Payroll Calculation Subsystem để tạo báo cáo.
+Payment Subsystem phụ thuộc vào Purchase Order Management Subsystem để thanh toán cho nhà cung cấp.
 
-Notification Subsystem phụ thuộc vào Payroll Calculation Subsystem để gửi thông báo về bảng lương.
+Approval Subsystem phụ thuộc vào Purchase Order Management Subsystem để phê duyệt các đơn đặt hàng.
 
-### 4.Checkpoints
-#### Thông tin người dùng được nhập vào từ giao diện người dùng.
-Kiểm tra việc nhập liệu hợp lệ và gửi yêu cầu.
+### Checkpoints:
+Kiểm tra tình trạng kho hàng để đảm bảo có đủ nguyên vật liệu (phụ thuộc vào Inventory Subsystem).
 
-#### Bảng lương được tính toán chính xác.
-Kiểm tra tính toán lương, thuế, phụ cấp dựa trên dữ liệu nhân viên.
+Đảm bảo các đơn hàng được phê duyệt qua Approval Subsystem trước khi được xử lý.
 
-#### Dữ liệu nhân viên được truy xuất đúng từ cơ sở dữ liệu.
-Xác minh thông tin nhân viên như mức lương cơ bản, số giờ làm việc.
+Thanh toán chính xác cho nhà cung cấp qua Payment Subsystem.
 
-#### Thanh toán được xử lý thành công.
-Kiểm tra việc chuyển tiền cho nhân viên qua hệ thống thanh toán.
-
-#### Báo cáo lương được tạo và xuất đúng định dạng.
-Kiểm tra báo cáo bảng lương cho người quản lý và nhân viên.
-
-#### Thông báo được gửi cho nhân viên sau khi bảng lương hoàn tất.
-Xác minh việc gửi email hoặc thông báo về kết quả bảng lương.
-
-### Sơ đồ phụ thuộc giữa các hệ thống con Run Payroll
-![Dependency - Run Payroll](https://www.planttext.com/api/plantuml/png/d8yz2i9044RxFSMGFbSGGKLi94IiWiLacOJ5_GapiqKGJsRXaRo2YeY2O97wU-_1TxjSvwB8ceCtPa1xn9wWg7E42aTEtiCkjpAAKYZWP02QlH339YfnXvO-ym7ASWRDMrkWjzcZkXI_c6VWF_6ghCBWqqW4IrHiKMX2uy44YWeL9qiYBlOJ8ZKDYHNM58cddjacTPspF_hPt0400F__0m00)
+### Sơ đồ phụ thuộc giữa các hệ thống con Maintain Purchase Order
+![Dependency - Maintain Purchase Order](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3XTNGM9oTc9wgeAIRs9cNWaGAmIK5YLd91QdAlWNfQGMAIbKSoaeHACAAlWcvW4rvQRcbIW4boOLLnQNfER6AkZgsYb4U-QL0ONpYogHP4Wp8RYqe20d4wW6pO34IgpAYJ4OfD-neA0elomnXpm3QhaSKlDIW4460000__y30000)
