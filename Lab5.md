@@ -16,28 +16,28 @@ Database Subsystem:
 Authorization Subsystem:
 - Gán vai trò (role) và quyền hạn (permissions) cho người dùng sau khi đăng nhập.
 ### 2. Document Subsystem Elements
-Subsystem 1: User Interface
+#### Subsystem 1: User Interface
 Chức năng:
 - Giao diện nhập tên đăng nhập và mật khẩu.
 - Hiển thị thông báo lỗi hoặc chuyển hướng sau khi đăng nhập thành công.
 Thành phần:
 - LoginForm: Biểu mẫu đăng nhập.
 - ErrorMessage: Hiển thị thông báo lỗi khi đăng nhập thất bại.
-Subsystem 2: Authentication
+#### Subsystem 2: Authentication
 Chức năng:
 - Xác thực thông tin người dùng.
 - Mã hóa và kiểm tra mật khẩu.
 Thành phần:
 - Authenticator: Kiểm tra thông tin người dùng với cơ sở dữ liệu.
 - PasswordHasher: Xử lý mã hóa mật khẩu.
-Subsystem 3: Database
+#### Subsystem 3: Database
 Chức năng:
 - Lưu trữ thông tin người dùng và phiên đăng nhập.
 - Truy xuất thông tin dựa trên tên đăng nhập.
 Thành phần:
 - UserTable: Bảng dữ liệu chứa thông tin người dùng.
 - SessionTable: Bảng dữ liệu chứa thông tin phiên.
-Subsystem 4: Authorization
+#### Subsystem 4: Authorization
 Chức năng:
 - Xác định vai trò và quyền hạn của người dùng sau khi đăng nhập.
 Thành phần:
