@@ -1,6 +1,6 @@
 # THIẾT KẾ LỚP
 
-# Hệ thống con Login
+# Login
 ### Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/R951JiGm34NtEONLLP5cBj056X126caG8n07CAdLHZHE5Jl30d4o5Xo9Av1s2Yt3P6Lzln__E5yVdnjHZ9fyPso78h0BZUFR43sy6HZF0JjNezAM-wJbHGNN8NI4FBKbFNkdesre7eAhpRkPRhjAsXAhiwWX_jw8iqfb4egCdYfurEYuMK6VdQyXrZ_Alv4jIhkVeF8CVIpc50_PV8UC3IqoYBY6XywOOBlqZsyuOhOb-xAdw5tc0v-mAq2hMJwJD0-VLxbUNvwieeBYIKWAyrSUm6NQZDrGJrmBt7DXDhaQlkeR003__mC0)
 ### Xác định các trạng thái
@@ -17,7 +17,7 @@
 ### Xác định các phụ thuộc, quan hệ kết hợp
 ![https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fTFVdfcdbj-KQw2hgwTWcDfIKPgNabcSc99VX4N2Wyi7vIVa-gRc9UOdbh4vP2Qbm8o0G000F__0m00]
 
-# Hệ thống con Run Payroll
+# Run Payroll
 ### Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/V54n3i8m3DppYgXJaU037H228ZQe13p0j1wGtBYA4qI5U1a3J-8B50WLK22JbJlVdUtBwJmI1zRvabHE8AAdPKLS8-g3qlUN0-MUmE4StH88R1tt4fsotn062XJ5c8sN64hsnZtHXhRZRQ6EAcXdK5iccWH5jbsJcMMHO8CXIjA6-ZHksrQm_qj_ZL2YSPdb74LU4bIFdu1_4UlhdzErEniCXb-6J7Iq5fH8TQ7Gy1wfuQTOeIb4BqoaHarrkyyL003__mC0)
 ### Xác định các trạng thái
@@ -27,7 +27,7 @@
 ### Xác định các phụ thuộc, quan hệ kết hợp
 ![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fThRa5EVcLggeAkhfr2G69bKNvEZdDYJd9fJc99VX4NXWXCNMvgNab0KNvoQd4nK9b3QbuAo3G00000__y30000)
 
-# Hệ thống con Maintain Purchase Order
+# Maintain Purchase Order
 ### Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/R5112i8m4Bpt5Q4d1Vk174J4IqyLYWy8oLf3uoOccuA8B_FWa_o2gQrYqJqjExCpE_kutLU1XATuD9aq8WIsZLuUH83AA_3iah5N2UUyxORXRCvPPxKQ8IbGWfaYrsnKAx439ElF7oLv0DdMP6KxqmJ7Kd5MazVOfDsrjGO4Zipeb23uHrsmKnH8ciuyEH0qu7-Sw-YSqLyH6g3thCIzxMyTrFgTQUgYM7vTpbc-2n3oFwIFIU9im06gm2hCirNg-fS-0G00__y30000)
 ### Xác định các trạng thái
