@@ -9,7 +9,7 @@
 ### Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/R90n3i8m34NtdC8Nw0Koe0fOkbH8dC1D3LHDuYfDXWfnCWQEn1N0fQ9GM6BhM-_RF_VhBUyZXfYSLSPYtyCEXy3MRjX7gHJWh00oSftbWQYeDUnZQFnHr0u7SoBJQi76JjGAVLlu0mU7iM6lOVqjg8kQbutKQmSwJZvgg3bLbYR_BKRI8E-CBVmcsXZ1o-Gg2fz7oZabEdfhJv_Vb5cscaFy7ozZvEHh-RW70000__y30000)
 ### Xác định các phụ thuộc, quan hệ kết hợp
-![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK90OcLHVawEStvU2OXEBOAAUpebvcK7LnQNfEP2HJ04W5gJCrAJiv7aFVFIyejo4qioy_Euk32CLj3LjKCsMC5A8RGujPWBMGYa14M5Psv1JcfkQbv9CHUQCfZzG4N1gNaf6F9e3eBPvW1K2_8_0000__y30000)
+![](https://www.planttext.com/api/plantuml/png/f59BJiGm3Dtd55w2H2-G1He1couO8OquW9jwe9h46IKkKeJcP2mu4bSWcPQgdoMR97f-zhEVy_FrlOk2GNfdbR4O8xnW2jxQHyzIRWhmgG0gScVh4r7TQZX8wFYje6TCvftCIPUqwwkW3VAfvgCF3gNphE5X2QZBg5MNm2558NTL0Gd8yKZXsJEb6pJ6zooR_3lOwjvg-F1TEvLULux4RUOwOlbNtJzyS0NTKAZrVMDfTEG9XJIKSz7DJ6XC7jhOzwwXC7Ur-BT7HnDsKMgxbggwNnYeuJLIL7EeK1QCEc-HYWTHhMZJN5aqMxM9hoSOrNQPM_xEBm000F__0m00)
 
 # PrintService
 ### Xác định các operations
@@ -19,7 +19,7 @@
 ### Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/R90x3i8m38RtdC8No0Koe4gmb0cH4uJMe4Xf4Zc60SJ963WILo19QK4LYoq__i-Fr-FP93R4vy69pfcKO4VMypfufk0S4jm4W8mbkGs7jbUWEGUdaYMCWLZ1llgv3qcD58rqiHsAk_YmnyOHsUKHwFcNLzKRmwYWsA-kqbf_33GOji5FX6WnASYrgZOHITihpiYiNruZvMfQzrzfEKWqwFlocpS0003__mC0)
 ### Xác định các phụ thuộc, quan hệ kết hợp
-![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK90KMPUYND-NabHVavEQX5Kr1Ci79nQL9QPd8gi4bKeABKWlwW4MTupBos_A3Un93C_ZuiBpMm5NLqxL9CLh1H2YrEBkL05GShGL7dc5kIavgRcbHHpOIY5E0Ae22o3HG6wmu1AWOvAoqmlBGBQxP2Qbm8A3W00003__mC0)
+![](https://www.planttext.com/api/plantuml/png/X54nZi8m4EpzYYsF8XzmSKA29bI8w1xWInPaoR6jzGQTGBpiYdlIVG7R2H59a6XiUNPcTcVz__kt3go8kzQ8sgWGO4_QyiPP9cSC4bm5GE4Jk7FVPIEXulWu9PJGEs89XtoFF2JPkrH8PrsZk0tMvJEQZI4BUlt7r6ubuUnqCugNMlp1kcFCXJVY7kspr34RMduEagVOAaO9wPpsBEtHKQjOE_imy1g3X5ZBOkMHAdt1qV4cn7oBHV4vYo_XAs0GKp3HPgoozGRRE70G2-eGQrZt2y8YW8Gur56VEegzrsYRzF5t0000__y30000)
 
 # ProjectManagementDatabase 
 ### Xác định các operations
@@ -29,4 +29,4 @@
 ### Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK90KNvMQdA9StvUIL5-JavgaK8rbuA2RW54s3F5IY6uf2WpBnqac9oHM9IUwbUQcvHQPANWZCH3qkAIM99e1JCMnE6gvKAr2oI8pvRyuX8hXPJyqgISL8HUPDiWcY6kSSvFIONh1gh6z8-khXsASx2hGF6DGsfU2YY800000F__0m00)
 ### Xác định các phụ thuộc, quan hệ kết hợp
-![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK90KNvMQdA9StvUIL5-Javg4LJS4ohXabYIc9HOd8ggt3SnBp4zDJSr3rtUEIEnA3tLhpGt2MuIaa5SN1ZMAUZgsc5Ofc2b45gSMio58GvIZDC9G5sUkGKvOB5YBjpAa0m1YG6rkQMM96Ua4jA3x3UGNNd9EQKfG5qEgNafe0050000__y30000)
+![](https://www.planttext.com/api/plantuml/png/X591JiCm4Bpx5NkaXtp01rGfLQKSG4Y81spi9IroxE9T7r3Lbt7WIVq2TT9MBY5mtF7EpCx8ny-l9Gj6IRrJnY4pFCNmHaRgu2K6voZ2NW5Kkn5kh8PdYLlVPT1iC7RqcFgMeeQwc0hA2WNrHJOFwd2sQWgmHQR12TuJnO_YvMxnE_kCFQ37ZdhoFsHUISpcmYF1hUCvfVBmCUqOh0wMhd4FwjOtA_nLJM3HO4Dg7MNkjDQgkfyseE65YTK4pylpWJKq_SuD6AlvjK9ak5x3EfT4_t5k-ZbvUUEIFR6Mv6t-EDy0003__mC0)
