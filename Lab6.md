@@ -1,32 +1,37 @@
 # THIẾT KẾ LỚP
 
-# BankSystem
-### Xác định các operations
+# 1.BankSystem
+## Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/f94nRiCm34LtdO9Z0iGNq504JPSC3Gha1BJCf4OaCf3e0aQHatNeaNg5I75SkCxOHHBunSUlhv-lxtLIZDe5Rvp7bE0D-oZURuIrx1JXqm30EOgZbB8QY7MnjF0XRMCkvjwsVKO-xVka58O6ZSZfGF5LcFe5EYSTguLoRSi7YG6r5Lx16NltJkvao-JRwO4zHoVYPZJoB_0etB0LXe7KI5TxAfMCU44b2sNzwsSowjuz6DbreQPeOQ-nvMCHwdnxXu5-Qvdp679LFKqpDDCyYpQHPihuY7bzvjAiSshbcwy0003__mC0)
-### Xác định các trạng thái
-![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bUqLgo2hgwTGa1gNafcNZeN5vG14IpAJqujBWPnhHI2GLgGXBYGP46AdVDp2t9IIr9JW6e34YjpK_DA46BeYjqICtDGL484kBWGfe2K0Lt71LKAupe0tGToE0000F__0m00)
 
-### Xác định các thuộc tính
+## Xác định các trạng thái
+![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bUqLgo2hgwTGa1gNafcNZeN5vG14IpAJqujBWPnhHI2GLgGXBYGP46AdVDp2t9IIr9JW6e34YjpK_DA46BeYjqICtDGL484kBWGfe2K0Lt71LKAupe0tGToE0000F__0m00)
+## Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/R90n3i8m34NtdC8Nw0Koe0fOkbH8dC1D3LHDuYfDXWfnCWQEn1N0fQ9GM6BhM-_RF_VhBUyZXfYSLSPYtyCEXy3MRjX7gHJWh00oSftbWQYeDUnZQFnHr0u7SoBJQi76JjGAVLlu0mU7iM6lOVqjg8kQbutKQmSwJZvgg3bLbYR_BKRI8E-CBVmcsXZ1o-Gg2fz7oZabEdfhJv_Vb5cscaFy7ozZvEHh-RW70000__y30000)
-### Xác định các phụ thuộc, quan hệ kết hợp
+
+## Xác định các phụ thuộc, quan hệ kết hợp
 ![](https://www.planttext.com/api/plantuml/png/f59BJiGm3Dtd55w2H2-G1He1couO8OquW9jwe9h46IKkKeJcP2mu4bSWcPQgdoMR97f-zhEVy_FrlOk2GNfdbR4O8xnW2jxQHyzIRWhmgG0gScVh4r7TQZX8wFYje6TCvftCIPUqwwkW3VAfvgCF3gNphE5X2QZBg5MNm2558NTL0Gd8yKZXsJEb6pJ6zooR_3lOwjvg-F1TEvLULux4RUOwOlbNtJzyS0NTKAZrVMDfTEG9XJIKSz7DJ6XC7jhOzwwXC7Ur-BT7HnDsKMgxbggwNnYeuJLIL7EeK1QCEc-HYWTHhMZJN5aqMxM9hoSOrNQPM_xEBm000F__0m00)
 
-# PrintService
-### Xác định các operations
+# 2.PrintService
+## Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/X9513i8W44Ntd6AMTT4BT66QwAQkZ3q1qj6GK6YcqyPeF9aBZ-GL1AecBGit4FwVDto6r-DPzYo9XzO8PMJVmvwqvOspJCuO9BW908WrqTcvOxOgO7Iw4NVnOQferKYZLZWHNL0Es3dYZE9Mm7HCw1J62wg1CHh_w4cENAvyRBI-jcQFdeCKSsmbOm5XNTnQsPEZLh9szjkXqzWNuBr8omwfrbVyjVJySa9vlfvFGCpd4VoPdRZJ6r9zcL6KQ9lmLMy0003__mC0)
-### Xác định các trạng thái
+
+## Xác định các trạng thái
 ![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bUqLgo2hgwTGdXYPabcNZeN5vG15Wmeoim3SwmKWa4Qu09SS1cGCkVyt8ASr9BK5A0wi8I2MsPUPd56QWggEhV4p1naHM0k5nT2EqWHq45SK8KmhaDgNWh8hG00003__mC0)
-### Xác định các thuộc tính
+## Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/R90x3i8m38RtdC8No0Koe4gmb0cH4uJMe4Xf4Zc60SJ963WILo19QK4LYoq__i-Fr-FP93R4vy69pfcKO4VMypfufk0S4jm4W8mbkGs7jbUWEGUdaYMCWLZ1llgv3qcD58rqiHsAk_YmnyOHsUKHwFcNLzKRmwYWsA-kqbf_33GOji5FX6WnASYrgZOHITihpiYiNruZvMfQzrzfEKWqwFlocpS0003__mC0)
-### Xác định các phụ thuộc, quan hệ kết hợp
+
+## Xác định các phụ thuộc, quan hệ kết hợp
 ![](https://www.planttext.com/api/plantuml/png/X54nZi8m4EpzYYsF8XzmSKA29bI8w1xWInPaoR6jzGQTGBpiYdlIVG7R2H59a6XiUNPcTcVz__kt3go8kzQ8sgWGO4_QyiPP9cSC4bm5GE4Jk7FVPIEXulWu9PJGEs89XtoFF2JPkrH8PrsZk0tMvJEQZI4BUlt7r6ubuUnqCugNMlp1kcFCXJVY7kspr34RMduEagVOAaO9wPpsBEtHKQjOE_imy1g3X5ZBOkMHAdt1qV4cn7oBHV4vYo_XAs0GKp3HPgoozGRRE70G2-eGQrZt2y8YW8Gur56VEegzrsYRzF5t0000__y30000)
 
-# ProjectManagementDatabase 
-### Xác định các operations
+# 3.ProjectManagementDatabase 
+## Xác định các operations
 ![](https://www.planttext.com/api/plantuml/png/V94n3i8m34Ntd28Z3Br01rIfB1r0I9p0RKnRb2QGE4W8SJ86ZiGLKDe2KQConlxls_vvFPwP9J3aEiag2TRodT57h2ZNYeoM4Ws_CSvv1mfg79jh85WiKtxHhM1tDf95q2t1uW2U7PhhX0kUFtmiRlf17Qg9pm6fQZuW4hJIpbhb3PWQjwuhn_MJgg_aMc3AzsHQLKU3lSKWFWs5Gdorta5RIhdGhfJesJYd95b56R0e5A-QFPNDXn1m_R7_bM42B4Cb_0U_0G00__y30000)
-### Xác định các trạng thái
+
+## Xác định các trạng thái
 ![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bUqLgo2hgwTWcTUPabcOavcLMeA5nSI1opfbbgId96PbwvW1M4g11JbPwKcboYu99OaSi5buKg1sgp0SWf1gIL5cQbbG4DHLILcvc0eIio1YdDnmKm1gGMwa0kg7iPrICrB0JaU0000__y30000)
-### Xác định các thuộc tính
+## Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niK90KNvMQdA9StvUIL5-JavgaK8rbuA2RW54s3F5IY6uf2WpBnqac9oHM9IUwbUQcvHQPANWZCH3qkAIM99e1JCMnE6gvKAr2oI8pvRyuX8hXPJyqgISL8HUPDiWcY6kSSvFIONh1gh6z8-khXsASx2hGF6DGsfU2YY800000F__0m00)
-### Xác định các phụ thuộc, quan hệ kết hợp
+
+## Xác định các phụ thuộc, quan hệ kết hợp
 ![](https://www.planttext.com/api/plantuml/png/X591JiCm4Bpx5NkaXtp01rGfLQKSG4Y81spi9IroxE9T7r3Lbt7WIVq2TT9MBY5mtF7EpCx8ny-l9Gj6IRrJnY4pFCNmHaRgu2K6voZ2NW5Kkn5kh8PdYLlVPT1iC7RqcFgMeeQwc0hA2WNrHJOFwd2sQWgmHQR12TuJnO_YvMxnE_kCFQ37ZdhoFsHUISpcmYF1hUCvfVBmCUqOh0wMhd4FwjOtA_nLJM3HO4Dg7MNkjDQgkfyseE65YTK4pylpWJKq_SuD6AlvjK9ak5x3EfT4_t5k-ZbvUUEIFR6Mv6t-EDy0003__mC0)
