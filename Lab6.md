@@ -15,7 +15,7 @@
 ### Xác định các thuộc tính
 ![](https://www.planttext.com/api/plantuml/png/P8yz3i8m38NtdY87W0jK2BKBKxl02QpMIYmbSMMxOa2SZ84ZSGM2A4K8Zz_xiTxZTc_KG6nEiHeYgBgEFUK3ItANofNRkbbHCYIitSc4ib_mLDndbd75rsgfQ6SBc8q6C9Qr9e26DdeMif3-GqUEs4C6Zz-85AQrwqXjz_RlFyzH4gaIvwBtC2toviUxB-qDvl4rxWa00F__0m00)
 ### Xác định các phụ thuộc, quan hệ kết hợp
-![https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fTFVdfcdbj-KQw2hgwTWcDfIKPgNabcSc99VX4N2Wyi7vIVa-gRc9UOdbh4vP2Qbm8o0G000F__0m00]
+![](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3fTFVdfcdbj-KQw2hgwTWcDfIKPgNabcSc99VX4N2Wyi7vIVa-gRc9UOdbh4vP2Qbm8o0G000F__0m00)
 
 # Run Payroll
 ### Xác định các operations
